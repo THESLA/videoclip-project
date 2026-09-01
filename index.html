@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎬 Videoclip Project - Documentación</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0c0c1d 0%, #1a1a2e 50%, #16213e 100%);
+            color: #e0e0e0;
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            text-align: center;
+            padding: 4rem 2rem;
+            background: rgba(0, 0, 0, 0.3);
+            border-bottom: 3px solid #e94560;
+            margin-bottom: 3rem;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #e94560;
+            text-shadow: 0 0 30px rgba(233, 69, 96, 0.5);
+            margin-bottom: 1rem;
+        }
+
+        .subtitle {
+            font-size: 1.3rem;
+            color: #a0a0a0;
+            margin-bottom: 2rem;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #e94560;
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        .section {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 40px rgba(233, 69, 96, 0.2);
+        }
+
+        .section h2 {
+            color: #e94560;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+        }
+
+        .section h2 .icon {
+            font-size: 2rem;
+        }
+
+        .section p {
+            color: #b0b0b0;
+            margin-bottom: 1.5rem;
+            font-size: 1.05rem;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .card {
+            background: rgba(233, 69, 96, 0.1);
+            border: 1px solid rgba(233, 69, 96, 0.3);
+            border-radius: 10px;
+            padding: 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            background: rgba(233, 69, 96, 0.2);
+            border-color: #e94560;
+        }
+
+        .card h3 {
+            color: #e94560;
+            margin-bottom: 0.8rem;
+            font-size: 1.2rem;
+        }
+
+        .card p {
+            color: #a0a0a0;
+            font-size: 0.95rem;
+            margin-bottom: 0;
+        }
+
+        .card .tag {
+            display: inline-block;
+            background: rgba(233, 69, 96, 0.3);
+            color: #ff6b81;
+            padding: 0.2rem 0.8rem;
+            border-radius: 10px;
+            font-size: 0.75rem;
+            margin-top: 0.8rem;
+        }
+
+        .file-tree {
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            padding: 1.5rem;
+            font-family: 'Courier New', monospace;
+            font-size: 0.95rem;
+            color: #a0d0a0;
+            overflow-x: auto;
+        }
+
+        .file-tree .folder {
+            color: #ffc107;
+        }
+
+        .file-tree .file {
+            color: #61dafb;
+        }
+
+        .file-tree .doc {
+            color: #e94560;
+        }
+
+        .cta {
+            text-align: center;
+            padding: 3rem;
+            background: linear-gradient(135deg, rgba(233, 69, 96, 0.2), rgba(15, 52, 96, 0.2));
+            border-radius: 15px;
+            margin-top: 3rem;
+        }
+
+        .cta h2 {
+            color: #e94560;
+            margin-bottom: 1rem;
+            justify-content: center;
+        }
+
+        .cta p {
+            color: #b0b0b0;
+            margin-bottom: 2rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #e94560;
+            color: white;
+            padding: 1rem 2.5rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #ff6b81;
+            transform: scale(1.05);
+            box-shadow: 0 5px 30px rgba(233, 69, 96, 0.4);
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #606060;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🎬 Videoclip Project</h1>
+        <p class="subtitle">Documentación Completa de Producción del Videoclip</p>
+        <span class="badge">EN DESARROLLO</span>
+    </header>
+
+    <div class="container">
+        <section class="section">
+            <h2><span class="icon">🎨</span> Visión Creativa</h2>
+            <p>El corazón del proyecto. Concepto, paleta visual, mood y narrativa del videoclip.</p>
+            <div class="card-grid">
+                <div class="card">
+                    <h3>Concepto Central</h3>
+                    <p>La idea principal que dará vida al videoclip.</p>
+                    <span class="tag">Pendiente</span>
+                </div>
+                <div class="card">
+                    <h3>Mood & Tono</h3>
+                    <p>Atmósfera visual, paleta de colores y emociones.</p>
+                    <span class="tag">Pendiente</span>
+                </div>
+                <div class="card">
+                    <h3>Narrativa en 3 Actos</h3>
+                    <p>Estructura: apertura, desarrollo, clímax y resolución.</p>
+                    <span class="tag">Pendiente</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2><span class="icon">📜</span> Guión Visual</h2>
+            <p>Descripción detallada de cada escena con visual, acción, música y notas técnicas.</p>
+            <div class="card-grid">
+                <div class="card">
+                    <h3>Escena por Escena</h3>
+                    <p>Estructura completa para cada plano del videoclip.</p>
+                    <span class="tag">Plantilla Lista</span>
+                </div>
+                <div class="card">
+                    <h3>Timeline General</h3>
+                    <p>Cronograma visual de la canción completa.</p>
+                    <span class="tag">Pendiente</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2><span class="icon">📋</span> Plan de Producción</h2>
+            <p>Equipo, cronograma, logística y checklists para la producción.</p>
+            <div class="card-grid">
+                <div class="card">
+                    <h3>Fases de Producción</h3>
+                    <p>Pre-producción, rodaje y post-producción.</p>
+                    <span class="tag">Estructura Lista</span>
+                </div>
+                <div class="card">
+                    <h3>Checklists Completos</h3>
+                    <p>Listas de verificación para cada fase.</p>
+                    <span class="tag">Lista</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2><span class="icon">🔧</span> Requisitos Técnicos</h2>
+            <p>Equipo de cámara, iluminación, audio y post-producción.</p>
+            <div class="card-grid">
+                <div class="card">
+                    <h3>Equipo de Cámara</h3>
+                    <p>Cámara, lentes y accesorios.</p>
+                    <span class="tag">Pendiente</span>
+                </div>
+                <div class="card">
+                    <h3>Post-Producción</h3>
+                    <p>Software y especificaciones de render.</p>
+                    <span class="tag">Pendiente</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2><span class="icon">💰</span> Presupuesto</h2>
+            <p>Estimación de costos con tres opciones: bajo, medio y alto.</p>
+            <div class="card-grid">
+                <div class="card">
+                    <h3>Opción Baja</h3>
+                    <p>Equipo básico, 1-2 locaciones, 1 día.</p>
+                    <span class="tag">$</span>
+                </div>
+                <div class="card">
+                    <h3>Opción Media</h3>
+                    <p>Equipo profesional, 2-3 días, color grading.</p>
+                    <span class="tag">$$</span>
+                </div>
+                <div class="card">
+                    <h3>Opción Alta</h3>
+                    <p>Producción completa, VFX, múltiples días.</p>
+                    <span class="tag">$$$</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2><span class="icon">📁</span> Estructura del Proyecto</h2>
+            <p>Organización de todos los documentos y recursos.</p>
+            <div class="file-tree">
+                <span class="folder">videoclip-project/</span><br>
+                ├── <span class="folder">docs/</span><br>
+                │&nbsp;&nbsp; ├── <span class="doc">01-vision-creativa.md</span><br>
+                │&nbsp;&nbsp; ├── <span class="doc">02-guion-visual.md</span><br>
+                │&nbsp;&nbsp; ├── <span class="doc">03-style-guide.md</span><br>
+                │&nbsp;&nbsp; ├── <span class="doc">04-plan-produccion.md</span><br>
+                │&nbsp;&nbsp; ├── <span class="doc">05-requisitos-tecnicos.md</span><br>
+                │&nbsp;&nbsp; └── <span class="doc">06-presupuesto.md</span><br>
+                ├── <span class="folder">storyboard/</span><br>
+                │&nbsp;&nbsp; └── <span class="doc">plantilla-escena.md</span><br>
+                ├── <span class="folder">scripts/</span><br>
+                │&nbsp;&nbsp; └── <span class="file">guion-visual.fountain</span><br>
+                ├── <span class="folder">assets/</span><br>
+                ├── <span class="folder">references/</span><br>
+                └── <span class="file">index.html</span>
+            </div>
+        </section>
+
+        <div class="cta">
+            <h2>🎬 ¿Listo para empezar?</h2>
+            <p>Comparte los detalles de tu canción y comenzaremos a documentar el videoclip.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>🎬 Videoclip Project Documentation</p>
+    </footer>
+</body>
+</html>
