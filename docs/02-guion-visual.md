@@ -7,7 +7,7 @@
 | 0:00 - 0:05 | Intro instrumental | La zapatería vacía, se encienden las luces | Plano general cenital |
 | 0:05 - 0:12 | Intro | André abre la puerta y entra | Plano general → Plano medio |
 | 0:12 - 0:18 | Intro | Camina por la zapatería, mira los zapatos | Travelling siguiéndolo |
-| 0:18 - 0:25 | Intro | Se sienta en el sillón del centro | Plano medio → Plano detalle (sentarse) |
+| 0:18 - 0:25 | Intro | Se sienta en el **mueble-grande tipo banca** (6-7 personas), en toda la mitad | Plano medio → Plano detalle (sentarse) |
 
 ---
 
