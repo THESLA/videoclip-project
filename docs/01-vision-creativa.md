@@ -5,7 +5,7 @@
 | Campo | Valor |
 |-------|-------|
 | **Nombre de la Canción** | ¿Quién Es Ella? / ¿Cómo Es Ella? |
-| **Artista/Banda** | [PENDIENTE - por definir] |
+| **Artista** | Fredy González |
 | **Género Musical** | Música Llanera / Sabanera |
 | **Estilo** | Venezolano / Campesino |
 | **Tema** | Amor idealizado, naturaleza, identidad llanera |
