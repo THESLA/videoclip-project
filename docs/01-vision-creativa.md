@@ -4,48 +4,50 @@
 
 | Campo | Valor |
 |-------|-------|
-| **Nombre de la Canción** | [PENDIENTE] |
-| **Artista/Banda** | [PENDIENTE] |
-| **Género Musical** | [PENDIENTE] |
-| **Duración** | [PENDIENTE] |
+| **Nombre de la Canción** | ¿Quién Es Ella? / ¿Cómo Es Ella? |
+| **Artista/Banda** | [PENDIENTE - por definir] |
+| **Género Musical** | Música Llanera / Sabanera |
+| **Estilo** | Venezolano / Campesino |
+| **Tema** | Amor idealizado, naturaleza, identidad llanera |
 
 ---
 
 ## Concepto Central
 
 ### La Idea
-[Brief description of the music video concept]
+Un hombre campesino llanero describe a la mujer que ama. Sus amigos le preguntan "¿quién es ella?" y él responde con metáforas de la naturaleza: es como una estrella, como una palmera, sus huellas quedaron en la arena de su corazón. El videoclip mostrará esta historia de amor a través de imágenes de los llanos venezolanos.
 
 ### Temática Principal
-- **Mensaje**: [What story or emotion does the video convey?]
-- **Metáfora visual**: [Visual metaphors used]
-- **Arco emocional**: [Emotional journey from start to finish]
+- **Mensaje**: El amor verdadero se describe con la belleza de la naturaleza
+- **Metáfora visual**: Ella = naturaleza llanera (estrella, palmera, arena, sol)
+- **Arco emocional**: De la curiosidad de los amigos a la declaración de amor eterno
 
 ### Referencias e Influencias
-- Películas/Videoclips que inspiran este proyecto
-- Estilos artísticos relevantes
-- Artistas visuales de referencia
+- Videoclips de música llanera tradicional
+- Documentales sobre los llanos venezolanos
+- Cine rural latinoamericano
+- Fotografía de paisaje venezolano
 
 ---
 
 ## Mood & Tono
 
 ### Atmosfera Visual
-- **Paleta de colores dominante**: [Colors]
-- **Luminosidad**: [Bright/Dark/Mixed]
-- **Textura visual**: [Clean/Gritty/Dreamy/etc.]
+- **Paleta de colores dominante**: Dorados, naranjas, verdes naturales, azul cielo
+- **Luminosidad**: Natural - atardeceres, amaneceres, luz dorada
+- **Textura visual**: Orgánica, cálida, terrosa
 
 ### Emociones a Evocar
-1. [Emotion 1]
-2. [Emotion 2]
-3. [Emotion 3]
+1. **Nostalgia**: El recuerdo de alguien especial
+2. **Pasión**: El fuego del amor llanero
+3. **Paz**: La tranquilidad de la sabana infinita
 
 ### Tono Narrativo
 - [ ] Dramático
-- [ ] Onírico
+- [x] Onírico
 - [ ] Realista
 - [ ] Surrealista
-- [ ] Estilizado
+- [x] Estilizado
 - [ ] Otro: ___________
 
 ---
@@ -53,24 +55,24 @@
 ## Estructura Narrativa
 
 ### Sinopsis General
-> [2-3 paragraph summary of the visual narrative]
+> Un campesino llanero camina por la sabana mientras sus amigos le preguntan por la mujer que ama. A través de metáforas visuales de la naturaleza - estrellas, palmeras, arena, atardeceres - él describe su amor. El videoclip intercala planos del hombre solo en el llano con flashbacks de ella: su cabellera al viento, sus ojos reflejando el paisaje, su voz que suena como el viento en la sabana.
 
 ### Actos del Videoclip
 
-#### Acto 1: Apertura (0:00 - [timestamp])
-- **Objetivo**: Establecer el mundo visual y el tono
-- **Escenas clave**: 
-- **Emoción dominante**:
+#### Acto 1: Apertura (0:00 - 0:45)
+- **Objetivo**: Establecer el mundo visual llanero y el tono nostálgico
+- **Escenas clave**: Llanos al amanecer, el hombre caminando, amigos reunidos
+- **Emoción dominante**: Curiosidad y asombro
 
-#### Acto 2: Desarrollo (0:00 - [timestamp])
-- **Objetivo**: Desarrollar la historia/concepto visual
-- **Escenas clave**: 
-- **Emoción dominante**:
+#### Acto 2: Desarrollo (0:45 - 2:30)
+- **Objetivo**: Desarrollar la descripción poética de ella a través de la naturaleza
+- **Escenas clave**: Metáforas visuales (estrella, palmera, arena), flashbacks de ella
+- **Emoción dominante**: Pasión y admiración
 
-#### Acto 3: Clímax y Resolución ([timestamp] - Fin)
-- **Objetivo**: Punto máximo de intensidad y cierre
-- **Escenas clave**: 
-- **Emoción dominante**:
+#### Acto 3: Clímax y Resolución (2:30 - Fin)
+- **Objetivo**: Punto máximo de intensidad emocional y declaración de amor
+- **Escenas clave**: Él solo bajo las estrellas, ella aparece, unión visual
+- **Emoción dominante**: Amor eterno y devoción
 
 ---
 
@@ -79,16 +81,21 @@
 ### Protagonista(s)
 | Nombre/Rol | Descripción | Vestuario | Propiedades |
 |------------|-------------|-----------|-------------|
-| [Character 1] | | | |
+| El Narrador (campesino) | Hombre joven llanero, enamorado, sensible | Camisa de manga larga, pantalón de campo, sombrero | Guitarra, hamaca |
+| Ella (la morena) | Mujer natural, belleza campesina, misteriosa | Vestido sencillo, cabello suelto | Flor silvestre |
 
 ### Figuras Secundarias
 | Nombre/Rol | Descripción | Aparición |
 |------------|-------------|-----------|
-| [Character 2] | | Escena X |
+| Los amigos | Grupo de campesinos curiosos | Verso 1, Coros |
+| El viento | Figura invisible que mueve todo | Todo el videoclip |
 
 ### Elementos Simbólicos
-- [Symbol 1]: [Meaning]
-- [Symbol 2]: [Meaning]
+- **Estrella**: Ella es luz en la oscuridad
+- **Palmera**: Ella es firme y hermosa
+- **Arena**: Sus huellas en su corazón
+- **Sol**: El ciclo del amor (alSalir el sol = esperanza)
+- **Arrebol**: El cielo de atardecer = pasión
 
 ---
 
@@ -96,8 +103,11 @@
 
 | Locación | Uso | Momento del día | Notas |
 |----------|-----|-----------------|-------|
-| [Location 1] | | | |
-| [Location 2] | | | |
+| Llanos venezolanos (sabana infinita) | Escenas principales, caminar | Atardecer/Amanecer | Sabana con pasto alto, horizonte abierto |
+| Bajo una palmera | Escena íntima, descripción | Tarde | Palmera solitaria, viento moviendo hojas |
+| Río o lago | Metáfora del espejo | Atardecer | Superficie calma que refleja el cielo |
+| Pueblo llanero | Escenas con amigos | Día | Calles de tierra, casas sencillas |
+| Cielo nocturno | Metáfora de la estrella | Noche | Cielo despejado, muchas estrellas |
 
 ---
 
