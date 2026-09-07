@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🎬 Videoclip Project - Documentación</title>
+    <title>🎬 Videoclip Project - ¿Quién Es Ella?</title>
     <style>
         * {
             margin: 0;
@@ -37,23 +37,62 @@
             font-size: 3rem;
             color: #e94560;
             text-shadow: 0 0 30px rgba(233, 69, 96, 0.5);
+            margin-bottom: 0.5rem;
+        }
+
+        .song-title {
+            font-size: 1.5rem;
+            color: #ffc107;
             margin-bottom: 1rem;
         }
 
         .subtitle {
-            font-size: 1.3rem;
+            font-size: 1.1rem;
             color: #a0a0a0;
-            margin-bottom: 2rem;
+            margin-bottom: 1.5rem;
         }
 
         .badge {
             display: inline-block;
-            background: #e94560;
-            color: white;
-            padding: 0.5rem 1.5rem;
+            padding: 0.4rem 1.2rem;
             border-radius: 20px;
             font-weight: bold;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
+            margin: 0.3rem;
+        }
+
+        .badge.done {
+            background: rgba(40, 167, 69, 0.2);
+            color: #28a745;
+            border: 1px solid #28a745;
+        }
+
+        .badge.progress {
+            background: rgba(255, 193, 7, 0.2);
+            color: #ffc107;
+            border: 1px solid #ffc107;
+        }
+
+        .badge.pending {
+            background: rgba(108, 117, 125, 0.2);
+            color: #adb5bd;
+            border: 1px solid #6c757d;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 8px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 4px;
+            margin: 1.5rem 0;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #28a745, #ffc107);
+            border-radius: 4px;
+            transition: width 0.5s ease;
         }
 
         .section {
@@ -62,17 +101,11 @@
             padding: 2rem;
             margin-bottom: 2rem;
             border: 1px solid rgba(255, 255, 255, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .section:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 40px rgba(233, 69, 96, 0.2);
         }
 
         .section h2 {
             color: #e94560;
-            font-size: 1.8rem;
+            font-size: 1.6rem;
             margin-bottom: 1rem;
             display: flex;
             align-items: center;
@@ -80,114 +113,162 @@
         }
 
         .section h2 .icon {
-            font-size: 2rem;
+            font-size: 1.8rem;
         }
 
         .section p {
             color: #b0b0b0;
-            margin-bottom: 1.5rem;
-            font-size: 1.05rem;
+            margin-bottom: 1rem;
+            font-size: 1rem;
         }
 
         .card-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 1.5rem;
-            margin-top: 1.5rem;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.2rem;
+            margin-top: 1rem;
         }
 
         .card {
-            background: rgba(233, 69, 96, 0.1);
-            border: 1px solid rgba(233, 69, 96, 0.3);
             border-radius: 10px;
-            padding: 1.5rem;
+            padding: 1.3rem;
             transition: all 0.3s ease;
         }
 
-        .card:hover {
-            background: rgba(233, 69, 96, 0.2);
-            border-color: #e94560;
+        .card.done {
+            background: rgba(40, 167, 69, 0.1);
+            border: 1px solid rgba(40, 167, 69, 0.3);
+        }
+
+        .card.pending {
+            background: rgba(108, 117, 125, 0.05);
+            border: 1px solid rgba(108, 117, 125, 0.2);
         }
 
         .card h3 {
-            color: #e94560;
-            margin-bottom: 0.8rem;
-            font-size: 1.2rem;
+            margin-bottom: 0.6rem;
+            font-size: 1.1rem;
         }
+
+        .card.done h3 { color: #28a745; }
+        .card.pending h3 { color: #6c757d; }
 
         .card p {
             color: #a0a0a0;
-            font-size: 0.95rem;
-            margin-bottom: 0;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
         }
 
-        .card .tag {
+        .tag {
             display: inline-block;
-            background: rgba(233, 69, 96, 0.3);
-            color: #ff6b81;
-            padding: 0.2rem 0.8rem;
+            padding: 0.2rem 0.7rem;
             border-radius: 10px;
-            font-size: 0.75rem;
+            font-size: 0.7rem;
+            font-weight: bold;
+        }
+
+        .tag.done {
+            background: rgba(40, 167, 69, 0.3);
+            color: #28a745;
+        }
+
+        .tag.pending {
+            background: rgba(108, 117, 125, 0.2);
+            color: #adb5bd;
+        }
+
+        .detail-box {
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            padding: 1rem;
             margin-top: 0.8rem;
+            font-size: 0.85rem;
+            color: #c0c0c0;
         }
 
-        .file-tree {
-            background: rgba(0, 0, 0, 0.3);
-            border-radius: 10px;
-            padding: 1.5rem;
-            font-family: 'Courier New', monospace;
-            font-size: 0.95rem;
-            color: #a0d0a0;
-            overflow-x: auto;
-        }
-
-        .file-tree .folder {
+        .detail-box strong {
             color: #ffc107;
         }
 
-        .file-tree .file {
-            color: #61dafb;
+        .lyrics-box {
+            background: rgba(233, 69, 96, 0.05);
+            border: 1px solid rgba(233, 69, 96, 0.2);
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-top: 1rem;
+            font-family: 'Georgia', serif;
+            font-style: italic;
+            color: #d0d0d0;
+            line-height: 1.8;
         }
 
-        .file-tree .doc {
-            color: #e94560;
-        }
-
-        .cta {
-            text-align: center;
-            padding: 3rem;
-            background: linear-gradient(135deg, rgba(233, 69, 96, 0.2), rgba(15, 52, 96, 0.2));
-            border-radius: 15px;
-            margin-top: 3rem;
-        }
-
-        .cta h2 {
-            color: #e94560;
-            margin-bottom: 1rem;
-            justify-content: center;
-        }
-
-        .cta p {
-            color: #b0b0b0;
-            margin-bottom: 2rem;
-        }
-
-        .btn {
-            display: inline-block;
-            background: #e94560;
-            color: white;
-            padding: 1rem 2.5rem;
-            border-radius: 30px;
-            text-decoration: none;
+        .lyrics-box .coro {
+            color: #ffc107;
             font-weight: bold;
-            font-size: 1.1rem;
-            transition: all 0.3s ease;
         }
 
-        .btn:hover {
-            background: #ff6b81;
-            transform: scale(1.05);
-            box-shadow: 0 5px 30px rgba(233, 69, 96, 0.4);
+        .concepto-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .concepto-item {
+            background: rgba(255, 193, 7, 0.05);
+            border: 1px solid rgba(255, 193, 7, 0.2);
+            border-radius: 8px;
+            padding: 1rem;
+        }
+
+        .concepto-item h4 {
+            color: #ffc107;
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+        }
+
+        .concepto-item p {
+            color: #a0a0a0;
+            font-size: 0.85rem;
+            margin: 0;
+        }
+
+        .personajes-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+            font-size: 0.9rem;
+        }
+
+        .personajes-table th {
+            background: rgba(233, 69, 96, 0.2);
+            color: #e94560;
+            padding: 0.7rem;
+            text-align: left;
+        }
+
+        .personajes-table td {
+            padding: 0.7rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            color: #b0b0b0;
+        }
+
+        .locaciones-list {
+            list-style: none;
+            margin-top: 1rem;
+        }
+
+        .locaciones-list li {
+            padding: 0.8rem 1rem;
+            background: rgba(255, 255, 255, 0.03);
+            border-left: 3px solid #e94560;
+            margin-bottom: 0.5rem;
+            border-radius: 0 5px 5px 0;
+            color: #b0b0b0;
+        }
+
+        .locaciones-list li strong {
+            color: #e0e0e0;
         }
 
         footer {
@@ -196,143 +277,367 @@
             margin-top: 3rem;
             border-top: 1px solid rgba(255, 255, 255, 0.1);
             color: #606060;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>🎬 Videoclip Project</h1>
-        <p class="subtitle">Documentación Completa de Producción del Videoclip</p>
-        <span class="badge">EN DESARROLLO</span>
+        <p class="song-title">🎵 "¿Quién Es Ella?"</p>
+        <p class="subtitle">Música Llanera / Sabanera — Documentación de Producción del Videoclip</p>
+        <div>
+            <span class="badge done">✅ Letra</span>
+            <span class="badge done">✅ Concepto</span>
+            <span class="badge progress">🟡 Guión Visual</span>
+            <span class="badge pending">⏳ Storyboard</span>
+            <span class="badge pending">⏳ Producción</span>
+        </div>
+        <div class="progress-bar">
+            <div class="progress-fill" style="width: 35%"></div>
+        </div>
+        <p style="color: #6c757d; font-size: 0.85rem;">Progreso: 35% completado</p>
     </header>
 
     <div class="container">
+
+        <!-- CANCIÓN -->
         <section class="section">
-            <h2><span class="icon">🎨</span> Visión Creativa</h2>
-            <p>El corazón del proyecto. Concepto, paleta visual, mood y narrativa del videoclip.</p>
+            <h2><span class="icon">🎵</span> La Canción</h2>
+            <p>Letra completa de "¿Quién Es Ella?" — Música llanera venezolana</p>
+
             <div class="card-grid">
-                <div class="card">
-                    <h3>Concepto Central</h3>
-                    <p>La idea principal que dará vida al videoclip.</p>
-                    <span class="tag">Pendiente</span>
+                <div class="card done">
+                    <h3>📝 Letra Completa</h3>
+                    <p>3 versos + 2 coros + outro. Tema: amor, fidelidad, naturaleza llanera.</p>
+                    <span class="tag done">COMPLETADO</span>
                 </div>
-                <div class="card">
-                    <h3>Mood & Tono</h3>
-                    <p>Atmósfera visual, paleta de colores y emociones.</p>
-                    <span class="tag">Pendiente</span>
+                <div class="card done">
+                    <h3>🎶 Género Musical</h3>
+                    <p>Música Llanera / Sabanera — Venezolano / Campesino</p>
+                    <span class="tag done">DEFINIDO</span>
                 </div>
-                <div class="card">
-                    <h3>Narrativa en 3 Actos</h3>
-                    <p>Estructura: apertura, desarrollo, clímax y resolución.</p>
-                    <span class="tag">Pendiente</span>
+                <div class="card pending">
+                    <h3>🎤 Artista</h3>
+                    <p>Nombre del cantante por confirmar.</p>
+                    <span class="tag pending">PENDIENTE</span>
+                </div>
+            </div>
+
+            <div class="lyrics-box">
+                <p><strong>Verso 1</strong></p>
+                <p>¿Y cómo es ella?, me preguntan mis amigos,<br>
+                únicamente les digo: solo ternura y pasión.<br>
+                ¿Que si es bonita?, me preguntan y les digo:<br>
+                mi morena es lo más lindo de toda la creación.</p>
+
+                <p class="coro"><strong>Coro 1</strong></p>
+                <p class="coro">¿Que cómo es ella? Que ella es la más bella,<br>
+                que es como una estrella, que ella es la doncella<br>
+                que marcó sus huellas en la suave arena de mi corazón,<br>
+                que no conoce de envidia, mucho menos de traición.</p>
+
+                <p class="coro"><strong>Coro 2</strong></p>
+                <p class="coro">¿Que si es llanera? Que es muy sabanera,<br>
+                que es como palmera, que su cabellera<br>
+                es la que desvela mi sentimiento lleno de ilusión,<br>
+                que si una noche me deja, me muero al salir el sol.</p>
+            </div>
+        </section>
+
+        <!-- CONCEPTO CREATIVO -->
+        <section class="section">
+            <h2><span class="icon">🎨</span> Concepto Creativo</h2>
+            <p>La historia del videoclip: fidelidad, tentación y amor verdadero</p>
+
+            <div class="concepto-grid">
+                <div class="concepto-item">
+                    <h4>🏪 La Zapatería</h4>
+                    <p>André espera a su esposa en una zapatería elegante. Ella aún no ha llegado.</p>
+                </div>
+                <div class="concepto-item">
+                    <h4>💃 La Tentación</h4>
+                    <p>Otras mujeres lo provocan: se sientan a su lado, piden zapatos, pasan frente a él.</p>
+                </div>
+                <div class="concepto-item">
+                    <h4>💎 La Fidelidad</h4>
+                    <p>André no cede. Su corazón pertenece a su esposa. Piensa en ella constantemente.</p>
+                </div>
+                <div class="concepto-item">
+                    <h4>🎁 El Regalo</h4>
+                    <p>Visita a cada mujer y les regala una caja de zapatos. Generosidad sin compromiso.</p>
+                </div>
+            </div>
+
+            <div class="detail-box" style="margin-top: 1.5rem;">
+                <strong>Mensaje:</strong> Fidelidad y amor verdadero frente a la tentación<br>
+                <strong>Metáfora visual:</strong> Zapatos = regalo de amor / generosidad<br>
+                <strong>Arco emocional:</strong> De la tentación a la fidelidad, del deseo al compromiso
+            </div>
+        </section>
+
+        <!-- PERSONAJES -->
+        <section class="section">
+            <h2><span class="icon">👥</span> Personajes</h2>
+            <p>Elenco del videoclip</p>
+
+            <table class="personajes-table">
+                <thead>
+                    <tr>
+                        <th>Personaje</th>
+                        <th>Descripción</th>
+                        <th>Vestuario</th>
+                        <th>Estado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>André</strong> (el cantante)</td>
+                        <td>Hombre fiel, en la zapatería esperando a su esposa</td>
+                        <td>Camisa elegante, jeans, zapatos bonitos</td>
+                        <td><span class="tag done">DEFINIDO</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>La Esposa</strong> (ella)</td>
+                        <td>La mujer que él ama, la que llega al final</td>
+                        <td>Vestido elegante, tacones</td>
+                        <td><span class="tag done">DEFINIDO</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Mujer 1</strong> (provocadora)</td>
+                        <td>Sentada a su lado, busca su atención</td>
+                        <td>Por definir</td>
+                        <td><span class="tag done">DEFINIDO</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Mujer 2</strong> (provocadora)</td>
+                        <td>Pide zapatos, pasa frente a él</td>
+                        <td>Por definir</td>
+                        <td><span class="tag done">DEFINIDO</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Mujer 3</strong> (provocadora)</td>
+                        <td>Lo mira, lo provoca</td>
+                        <td>Por definir</td>
+                        <td><span class="tag done">DEFINIDO</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- LOCACIONES -->
+        <section class="section">
+            <h2><span class="icon">📍</span> Locaciones</h2>
+            <p>Espacios filmación del videoclip</p>
+
+            <ul class="locaciones-list">
+                <li><strong>Zapatería elegante</strong> — Escena principal, espera y provocación. Interior moderno.</li>
+                <li><strong>Domicilio de las mujeres</strong> — André regala zapatos. Diferentes escenarios.</li>
+                <li><strong>Lugar de trabajo de las mujeres</strong> — Oficinas, tiendas, salones.</li>
+                <li><strong>Entrada de la zapatería</strong> — Llegada de la esposa. Reencuentro final.</li>
+            </ul>
+        </section>
+
+        <!-- ESTRUCTURA NARRATIVA -->
+        <section class="section">
+            <h2><span class="icon">📖</span> Estructura en 3 Actos</h2>
+            <p>Narrativa del videoclip dividida en tres momentos</p>
+
+            <div class="card-grid">
+                <div class="card done">
+                    <h3>Acto 1: La Espera</h3>
+                    <p><strong>0:00 - 0:45</strong><br>
+                    André en la zapatería, mirando la puerta. Las mujeres empiezan a llegar y provocarlo.</p>
+                    <span class="tag done">DEFINIDO</span>
+                </div>
+                <div class="card done">
+                    <h3>Acto 2: La Tentación</h3>
+                    <p><strong>0:45 - 2:30</strong><br>
+                    Las mujeres lo provocan activamente. Se sientan, piden zapatos, pasan frente a él.</p>
+                    <span class="tag done">DEFINIDO</span>
+                </div>
+                <div class="card done">
+                    <h3>Acto 3: La Fidelidad</h3>
+                    <p><strong>2:30 - Fin</strong><br>
+                    André visita a las mujeres y les regala zapatos. Su esposa llega. Reencuentro.</p>
+                    <span class="tag done">DEFINIDO</span>
                 </div>
             </div>
         </section>
 
+        <!-- GUIÓN VISUAL -->
         <section class="section">
             <h2><span class="icon">📜</span> Guión Visual</h2>
-            <p>Descripción detallada de cada escena con visual, acción, música y notas técnicas.</p>
+            <p>Detalle escena por escena del videoclip</p>
+
             <div class="card-grid">
-                <div class="card">
+                <div class="card pending">
                     <h3>Escena por Escena</h3>
-                    <p>Estructura completa para cada plano del videoclip.</p>
-                    <span class="tag">Plantilla Lista</span>
+                    <p>Descripción detallada de cada plano con visual, acción y música.</p>
+                    <span class="tag pending">PENDIENTE</span>
                 </div>
-                <div class="card">
+                <div class="card pending">
                     <h3>Timeline General</h3>
-                    <p>Cronograma visual de la canción completa.</p>
-                    <span class="tag">Pendiente</span>
+                    <p>Cronograma visual sincronizado con la canción.</p>
+                    <span class="tag pending">PENDIENTE</span>
+                </div>
+                <div class="card pending">
+                    <h3>Notas de Edición</h3>
+                    <p>Ritmo, transiciones, color grading por escena.</p>
+                    <span class="tag pending">PENDIENTE</span>
                 </div>
             </div>
         </section>
 
+        <!-- STORYBOARD -->
+        <section class="section">
+            <h2><span class="icon">🎬</span> Storyboard</h2>
+            <p>Visualización de planos antes de la producción</p>
+
+            <div class="card-grid">
+                <div class="card pending">
+                    <h3>Plantilla por Escena</h3>
+                    <p>Estructura con tipo de plano, movimiento de cámara y acción.</p>
+                    <span class="tag pending">PENDIENTE</span>
+                </div>
+                <div class="card pending">
+                    <h3>Resumen de Tomas</h3>
+                    <p>Tabla de tomas necesarias por escena.</p>
+                    <span class="tag pending">PENDIENTE</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- STYLE GUIDE -->
+        <section class="section">
+            <h2><span class="icon">🎨</span> Style Guide</h2>
+            <p>Guía de estilo visual para mantener consistencia</p>
+
+            <div class="card-grid">
+                <div class="card pending">
+                    <h3>Paleta de Colores</h3>
+                    <p>Colores principales, secundarios y acentos.</p>
+                    <span class="tag pending">PENDIENTE</span>
+                </div>
+                <div class="card pending">
+                    <h3>Iluminación</h3>
+                    <p>Esquemas de luz por escena.</p>
+                    <span class="tag pending">PENDIENTE</span>
+                </div>
+                <div class="card pending">
+                    <h3>Vestuario</h3>
+                    <p>Diseño de vestuario por personaje.</p>
+                    <span class="tag pending">PENDIENTE</span>
+                </div>
+                <div class="card pending">
+                    <h3>Movimiento de Cámara</h3>
+                    <p>Estilo general y movimientos por escena.</p>
+                    <span class="tag pending">PENDIENTE</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- PLAN DE PRODUCCIÓN -->
         <section class="section">
             <h2><span class="icon">📋</span> Plan de Producción</h2>
-            <p>Equipo, cronograma, logística y checklists para la producción.</p>
+            <p>Cronograma, equipo y logística</p>
+
             <div class="card-grid">
-                <div class="card">
+                <div class="card pending">
                     <h3>Fases de Producción</h3>
                     <p>Pre-producción, rodaje y post-producción.</p>
-                    <span class="tag">Estructura Lista</span>
+                    <span class="tag pending">PENDIENTE</span>
                 </div>
-                <div class="card">
-                    <h3>Checklists Completos</h3>
+                <div class="card pending">
+                    <h3>Equipo Necesario</h3>
+                    <p>Creativo, técnico y de producción.</p>
+                    <span class="tag pending">PENDIENTE</span>
+                </div>
+                <div class="card pending">
+                    <h3>Checklists</h3>
                     <p>Listas de verificación para cada fase.</p>
-                    <span class="tag">Lista</span>
+                    <span class="tag pending">PENDIENTE</span>
                 </div>
             </div>
         </section>
 
+        <!-- REQUISITOS TÉCNICOS -->
         <section class="section">
             <h2><span class="icon">🔧</span> Requisitos Técnicos</h2>
-            <p>Equipo de cámara, iluminación, audio y post-producción.</p>
+            <p>Equipo de cámara, iluminación y audio</p>
+
             <div class="card-grid">
-                <div class="card">
+                <div class="card pending">
                     <h3>Equipo de Cámara</h3>
                     <p>Cámara, lentes y accesorios.</p>
-                    <span class="tag">Pendiente</span>
+                    <span class="tag pending">PENDIENTE</span>
                 </div>
-                <div class="card">
+                <div class="card pending">
+                    <h3>Iluminación</h3>
+                    <p>Luces y modificadores.</p>
+                    <span class="tag pending">PENDIENTE</span>
+                </div>
+                <div class="card pending">
                     <h3>Post-Producción</h3>
                     <p>Software y especificaciones de render.</p>
-                    <span class="tag">Pendiente</span>
+                    <span class="tag pending">PENDIENTE</span>
                 </div>
             </div>
         </section>
 
+        <!-- PRESUPUESTO -->
         <section class="section">
             <h2><span class="icon">💰</span> Presupuesto</h2>
-            <p>Estimación de costos con tres opciones: bajo, medio y alto.</p>
+            <p>Estimación de costos</p>
+
             <div class="card-grid">
-                <div class="card">
+                <div class="card pending">
                     <h3>Opción Baja</h3>
                     <p>Equipo básico, 1-2 locaciones, 1 día.</p>
-                    <span class="tag">$</span>
+                    <span class="tag pending">PENDIENTE</span>
                 </div>
-                <div class="card">
+                <div class="card pending">
                     <h3>Opción Media</h3>
-                    <p>Equipo profesional, 2-3 días, color grading.</p>
-                    <span class="tag">$$</span>
+                    <p>Equipo profesional, 2-3 días.</p>
+                    <span class="tag pending">PENDIENTE</span>
                 </div>
-                <div class="card">
+                <div class="card pending">
                     <h3>Opción Alta</h3>
-                    <p>Producción completa, VFX, múltiples días.</p>
-                    <span class="tag">$$$</span>
+                    <p>Producción completa, VFX.</p>
+                    <span class="tag pending">PENDIENTE</span>
                 </div>
             </div>
         </section>
 
-        <section class="section">
-            <h2><span class="icon">📁</span> Estructura del Proyecto</h2>
-            <p>Organización de todos los documentos y recursos.</p>
-            <div class="file-tree">
-                <span class="folder">videoclip-project/</span><br>
-                ├── <span class="folder">docs/</span><br>
-                │&nbsp;&nbsp; ├── <span class="doc">01-vision-creativa.md</span><br>
-                │&nbsp;&nbsp; ├── <span class="doc">02-guion-visual.md</span><br>
-                │&nbsp;&nbsp; ├── <span class="doc">03-style-guide.md</span><br>
-                │&nbsp;&nbsp; ├── <span class="doc">04-plan-produccion.md</span><br>
-                │&nbsp;&nbsp; ├── <span class="doc">05-requisitos-tecnicos.md</span><br>
-                │&nbsp;&nbsp; └── <span class="doc">06-presupuesto.md</span><br>
-                ├── <span class="folder">storyboard/</span><br>
-                │&nbsp;&nbsp; └── <span class="doc">plantilla-escena.md</span><br>
-                ├── <span class="folder">scripts/</span><br>
-                │&nbsp;&nbsp; └── <span class="file">guion-visual.fountain</span><br>
-                ├── <span class="folder">assets/</span><br>
-                ├── <span class="folder">references/</span><br>
-                └── <span class="file">index.html</span>
+        <!-- PRÓXIMOS PASOS -->
+        <section class="section" style="border-color: #ffc107;">
+            <h2><span class="icon">🚀</span> Próximos Pasos</h2>
+            <p>Lo que sigue por hacer</p>
+
+            <div class="card-grid">
+                <div class="card" style="background: rgba(255, 193, 7, 0.1); border-color: rgba(255, 193, 7, 0.3);">
+                    <h3 style="color: #ffc107;">1. Guión Visual</h3>
+                    <p>Detallar cada escena del videoclip con visual, acción y música.</p>
+                    <span class="tag pending">SIGUIENTE</span>
+                </div>
+                <div class="card" style="background: rgba(255, 193, 7, 0.1); border-color: rgba(255, 193, 7, 0.3);">
+                    <h3 style="color: #ffc107;">2. Storyboard</h3>
+                    <p>Visualizar los planos con tipo de plano y movimiento de cámara.</p>
+                    <span class="tag pending">PRÓXIMO</span>
+                </div>
+                <div class="card" style="background: rgba(255, 193, 7, 0.1); border-color: rgba(255, 193, 7, 0.3);">
+                    <h3 style="color: #ffc107;">3. Style Guide</h3>
+                    <p>Definir colores, iluminación, vestuario y movimiento de cámara.</p>
+                    <span class="tag pending">PRÓXIMO</span>
+                </div>
             </div>
         </section>
 
-        <div class="cta">
-            <h2>🎬 ¿Listo para empezar?</h2>
-            <p>Comparte los detalles de tu canción y comenzaremos a documentar el videoclip.</p>
-        </div>
     </div>
 
     <footer>
-        <p>🎬 Videoclip Project Documentation</p>
+        <p>🎬 Videoclip Project — "¿Quién Es Ella?" — Documentación de Producción</p>
+        <p style="margin-top: 0.5rem;">Última actualización: Septiembre 2026</p>
     </footer>
 </body>
 </html>
