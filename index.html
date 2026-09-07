@@ -88,6 +88,13 @@
         .acto-card.a3 h3 { color: #e94560; }
         .acto-card p { font-size: 0.85rem; margin: 0.3rem 0; }
 
+        .storyboard-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.2rem; margin-top: 1rem; }
+        .storyboard-card { background: rgba(0,0,0,0.2); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; overflow: hidden; }
+        .storyboard-card img { width: 100%; height: 200px; object-fit: cover; }
+        .storyboard-card .info { padding: 1rem; }
+        .storyboard-card .info h4 { color: #ffc107; font-size: 0.9rem; margin-bottom: 0.3rem; }
+        .storyboard-card .info p { color: #a0a0a0; font-size: 0.8rem; margin: 0; }
+        .storyboard-card .info .camera { color: #28a745; font-size: 0.75rem; font-weight: bold; }
         footer { text-align: center; padding: 2rem; margin-top: 3rem; border-top: 1px solid rgba(255,255,255,0.1); color: #606060; font-size: 0.85rem; }
     </style>
 </head>
@@ -101,11 +108,11 @@
             <span class="badge done">✅ Letra</span>
             <span class="badge done">✅ Concepto</span>
             <span class="badge done">✅ Guión Visual</span>
-            <span class="badge pending">⏳ Storyboard</span>
+            <span class="badge done">✅ Storyboard</span>
             <span class="badge pending">⏳ Producción</span>
         </div>
-        <div class="progress-bar"><div class="progress-fill" style="width: 55%"></div></div>
-        <p style="color: #6c757d; font-size: 0.85rem;">Progreso: 55% completado</p>
+        <div class="progress-bar"><div class="progress-fill" style="width: 70%"></div></div>
+        <p style="color: #6c757d; font-size: 0.85rem;">Progreso: 70% completado</p>
     </header>
 
     <div class="container">
@@ -386,6 +393,191 @@
                     <tr><td class="time">2:53 - 2:55</td><td class="lyric">—</td><td class="action">Se miran, sonríen. FUNDIDO A NEGRO.</td><td class="camera">Fundido final</td></tr>
                 </tbody>
             </table>
+        </section>
+
+        <!-- ==================== STORYBOARD IMÁGENES ==================== -->
+        <section class="section">
+            <h2><span class="icon">🎬</span> Storyboard — Imágenes por Escena</h2>
+            <p>22 imágenes generadas con estilo llanero venezolano — André (40 años) y su esposa (35 años)</p>
+
+            <div class="storyboard-grid">
+                <div class="storyboard-card">
+                    <img src="storyboard/imagenes/01_zapateria.png" alt="Zapatería vacía" loading="lazy">
+                    <div class="info">
+                        <h4>01 — Zapatería Vacía</h4>
+                        <p>Zapatería elegante al atardecer, sillón al centro</p>
+                        <span class="camera">Plano general cenital</span>
+                    </div>
+                </div>
+                <div class="storyboard-card">
+                    <img src="storyboard/imagenes/02_andre_entra.png" alt="André entra" loading="lazy">
+                    <div class="info">
+                        <h4>02 — André Entra</h4>
+                        <p>Llega solo, mira los zapatos</p>
+                        <span class="camera">General → Medio</span>
+                    </div>
+                </div>
+                <div class="storyboard-card">
+                    <img src="storyboard/imagenes/03_andre_sienta.png" alt="André se sienta" loading="lazy">
+                    <div class="info">
+                        <h4>03 — André se Sienta</h4>
+                        <p>En el sillón del centro, espera</p>
+                        <span class="camera">Medio → Detalle</span>
+                    </div>
+                </div>
+                <div class="storyboard-card">
+                    <img src="storyboard/imagenes/04_mujer1_llega.png" alt="Mujer provoca 1" loading="lazy">
+                    <div class="info">
+                        <h4>04 — Mujer 1 Provoca</h4>
+                        <p>Se sienta, se quita zapatos, se le cae</p>
+                        <span class="camera">Contraplano</span>
+                    </div>
+                </div>
+                <div class="storyboard-card">
+                    <img src="storyboard/imagenes/05_mujer2_cabello.png" alt="Mujer toca cabello" loading="lazy">
+                    <div class="info">
+                        <h4>05 — Mujer 2: Cabello</h4>
+                        <p>Le toca el cabello, coquetea</p>
+                        <span class="camera">Close-up</span>
+                    </div>
+                </div>
+                <div class="storyboard-card">
+                    <img src="storyboard/imagenes/06_mujer3_pasa.png" alt="Mujer pasa" loading="lazy">
+                    <div class="info">
+                        <h4>06 — Mujer 3 Pasa</h4>
+                        <p>Camina frente a él, provocadora</p>
+                        <span class="camera">Tracking</span>
+                    </div>
+                </div>
+                <div class="storyboard-card">
+                    <img src="storyboard/imagenes/07_andre_canta.png" alt="André canta" loading="lazy">
+                    <div class="info">
+                        <h4>07 — André Canta (Coro 1)</h4>
+                        <p>Rodeado de zapatos, energía</p>
+                        <span class="camera">Medio gimbal</span>
+                    </div>
+                </div>
+                <div class="storyboard-card">
+                    <img src="storyboard/imagenes/08_flashback_estrellas.png" alt="Flashback estrellas" loading="lazy">
+                    <div class="info">
+                        <h4>08 — Flashback: Estrellas</h4>
+                        <p>Ella camina bajo el cielo estrellado</p>
+                        <span class="camera">General nocturno</span>
+                    </div>
+                </div>
+                <div class="storyboard-card">
+                    <img src="storyboard/imagenes/09_huellas_arena.png" alt="Huellas en arena" loading="lazy">
+                    <div class="info">
+                        <h4>09 — Huellas en Arena</h4>
+                        <p>Pies caminando, huellas en la arena</p>
+                        <span class="camera">Detalle pies</span>
+                    </div>
+                </div>
+                <div class="storyboard-card">
+                    <img src="storyboard/imagenes/10_mujeres_rodean.png" alt="Mujeres rodean" loading="lazy">
+                    <div class="info">
+                        <h4>10 — Mujeres lo Rodean</h4>
+                        <p>6-9 mujeres, máxima provocación</p>
+                        <span class="camera">Cenital</span>
+                    </div>
+                </div>
+                <div class="storyboard-card">
+                    <img src="storyboard/imagenes/11_ojos_reflejo.png" alt="Ojos reflejo" loading="lazy">
+                    <div class="info">
+                        <h4>11 — Ojos: Reflejo</h4>
+                        <p>Sus ojos reflejan el llano</p>
+                        <span class="camera">Detalle ojos</span>
+                    </div>
+                </div>
+                <div class="storyboard-card">
+                    <img src="storyboard/imagenes/12_cielo_arrebol.png" alt="Cielo arrebol" loading="lazy">
+                    <div class="info">
+                        <h4>12 — Cielo de Arrebol</h4>
+                        <p>Atardecer en los llanos venezolanos</p>
+                        <span class="camera">General paisaje</span>
+                    </div>
+                </div>
+                <div class="storyboard-card">
+                    <img src="storyboard/imagenes/13_andre_espera.png" alt="André espera" loading="lazy">
+                    <div class="info">
+                        <h4>13 — André Espera</h4>
+                        <p>Mira la puerta, espera a alguien</p>
+                        <span class="camera">Medio + mirada</span>
+                    </div>
+                </div>
+                <div class="storyboard-card">
+                    <img src="storyboard/imagenes/14_puerta_dorada.png" alt="Puerta dorada" loading="lazy">
+                    <div class="info">
+                        <h4>14 — Puerta Dorada</h4>
+                        <p>Silueta de ella en la entrada</p>
+                        <span class="camera">General contraluz</span>
+                    </div>
+                </div>
+                <div class="storyboard-card" style="border-color: #ffc107;">
+                    <img src="storyboard/imagenes/15_esposa_entra.png" alt="Esposa entra" loading="lazy">
+                    <div class="info">
+                        <h4>15 — La Esposa Entra ⭐</h4>
+                        <p>RALENTIZADO 120fps — Ella llega</p>
+                        <span class="camera">⭐ 120fps Tracking</span>
+                    </div>
+                </div>
+                <div class="storyboard-card" style="border-color: #ffc107;">
+                    <img src="storyboard/imagenes/16_juntos_sillon.png" alt="Juntos en sillón" loading="lazy">
+                    <div class="info">
+                        <h4>16 — Juntos en el Sillón</h4>
+                        <p>Se sientan, se miran, sonríen</p>
+                        <span class="camera">⭐ 120fps Medio</span>
+                    </div>
+                </div>
+                <div class="storyboard-card" style="border-color: #e94560;">
+                    <img src="storyboard/imagenes/17_pone_zapato.png" alt="Le pone el zapato" loading="lazy">
+                    <div class="info">
+                        <h4>17 — Le Pone el Zapato ⭐</h4>
+                        <p>Se arrodilla, le pone el zapato</p>
+                        <span class="camera">⭐ 120fps Detalle</span>
+                    </div>
+                </div>
+                <div class="storyboard-card" style="border-color: #e94560;">
+                    <img src="storyboard/imagenes/18_beso.png" alt="El beso" loading="lazy">
+                    <div class="info">
+                        <h4>18 — El Beso ⭐</h4>
+                        <p>Se besan, ralentizado</p>
+                        <span class="camera">⭐ 120fps Beso</span>
+                    </div>
+                </div>
+                <div class="storyboard-card">
+                    <img src="storyboard/imagenes/19_mujeres_reaccion.png" alt="Mujeres reaccionan" loading="lazy">
+                    <div class="info">
+                        <h4>19 — Mujeres Reaccionan</h4>
+                        <p>"Ay no, está casado, me voy"</p>
+                        <span class="camera">Medio grupo</span>
+                    </div>
+                </div>
+                <div class="storyboard-card">
+                    <img src="storyboard/imagenes/20_mujeres_salen.png" alt="Mujeres se van" loading="lazy">
+                    <div class="info">
+                        <h4>20 — Mujeres se Van</h4>
+                        <p>Una por una, salen derrotadas</p>
+                        <span class="camera">General salida</span>
+                    </div>
+                </div>
+                <div class="storyboard-card" style="border-color: #28a745;">
+                    <img src="storyboard/imagenes/21_final_juntos.png" alt="Final juntos" loading="lazy">
+                    <div class="info">
+                        <h4>21 — Final: Solos</h4>
+                        <p>Juntos en la zapatería vacía</p>
+                        <span class="camera">General romántico</span>
+                    </div>
+                </div>
+                <div class="storyboard-card">
+                    <img src="storyboard/imagenes/22_fundido.png" alt="Fundido a negro" loading="lazy">
+                    <div class="info">
+                        <h4>22 — Fundido a Negro</h4>
+                        <p>Silueta, luz se apaga</p>
+                        <span class="camera">Fundido final</span>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- ==================== PRÓXIMOS PASOS ==================== -->
