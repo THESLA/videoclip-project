@@ -15,18 +15,19 @@
 ## Concepto Central
 
 ### La Idea
-Un hombre campesino llanero describe a la mujer que ama. Sus amigos le preguntan "¿quién es ella?" y él responde con metáforas de la naturaleza: es como una estrella, como una palmera, sus huellas quedaron en la arena de su corazón. El videoclip mostrará esta historia de amor a través de imágenes de los llanos venezolanos.
+André, el cantante, está en una zapatería esperando a su esposa que aún no llega. Mientras espera, otras mujeres se sientan a su lado y lo provocan: ordenan zapatos, pasan frente a él buscando que las miren, intentan quitarle el amor a la que sí lo merece. André, fiel a su esposa, no cede. Como gesto de generosidad y despedida, él visita a esas mujeres en sus lugares de trabajo o residencia y les regala una caja de zapatos.
+
+La canción llanera se entrelaza con esta historia moderna: la descripción poética de "ella" (su esposa) contrasta con las otras mujeres que intentan seducirlo. Los zapatos son el símbolo central: ella es la merecedora del regalo, pero él también tiene generosidad con las demás.
 
 ### Temática Principal
-- **Mensaje**: El amor verdadero se describe con la belleza de la naturaleza
-- **Metáfora visual**: Ella = naturaleza llanera (estrella, palmera, arena, sol)
-- **Arco emocional**: De la curiosidad de los amigos a la declaración de amor eterno
+- **Mensaje**: Fidelidad y amor verdadero frente a la tentación
+- **Metáfora visual**: Zapatos = regalo de amor / generosidad
+- **Arco emocional**: De la tentación a la fidelidad, del deseo al compromiso
 
 ### Referencias e Influencias
-- Videoclips de música llanera tradicional
-- Documentales sobre los llanos venezolanos
-- Cine rural latinoamericano
-- Fotografía de paisaje venezolano
+- Videoclips de música urbana con narrativa
+- Cine romántico latinoamericano
+- Historias de fidelidad y tentación
 
 ---
 
@@ -55,24 +56,24 @@ Un hombre campesino llanero describe a la mujer que ama. Sus amigos le preguntan
 ## Estructura Narrativa
 
 ### Sinopsis General
-> Un campesino llanero camina por la sabana mientras sus amigos le preguntan por la mujer que ama. A través de metáforas visuales de la naturaleza - estrellas, palmeras, arena, atardeceres - él describe su amor. El videoclip intercala planos del hombre solo en el llano con flashbacks de ella: su cabellera al viento, sus ojos reflejando el paisaje, su voz que suena como el viento en la sabana.
+> André está en una zapatería esperando a su esposa. Mientras ella no llega, otras mujeres lo provocan: se sientan a su lado, piden zapatos, pasan frente a él buscando su atención. André, pensando en su esposa, imagina la llegada de ella. Al final, él visita a cada una de las mujeres que lo provocaron y les regala una caja de zapatos como gesto de generosidad, pero su corazón siempre fue de su esposa.
 
 ### Actos del Videoclip
 
-#### Acto 1: Apertura (0:00 - 0:45)
-- **Objetivo**: Establecer el mundo visual llanero y el tono nostálgico
-- **Escenas clave**: Llanos al amanecer, el hombre caminando, amigos reunidos
-- **Emoción dominante**: Curiosidad y asombro
+#### Acto 1: La Espera (0:00 - 0:45)
+- **Objetivo**: Establecer la zapatería y la espera de André
+- **Escenas clave**: André sentado, mirando la puerta, las mujeres empiezan a llegar
+- **Emoción dominante**: Expectativa y curiosidad
 
-#### Acto 2: Desarrollo (0:45 - 2:30)
-- **Objetivo**: Desarrollar la descripción poética de ella a través de la naturaleza
-- **Escenas clave**: Metáforas visuales (estrella, palmera, arena), flashbacks de ella
-- **Emoción dominante**: Pasión y admiración
+#### Acto 2: La Tentación (0:45 - 2:30)
+- **Objetivo**: Mostrar cómo las mujeres lo provocan
+- **Escenas clave**: Mujeres sentándose a su lado, pidiendo zapatos, pasando frente a él
+- **Emoción dominante**: Tentación y conflicto interno
 
-#### Acto 3: Clímax y Resolución (2:30 - Fin)
-- **Objetivo**: Punto máximo de intensidad emocional y declaración de amor
-- **Escenas clave**: Él solo bajo las estrellas, ella aparece, unión visual
-- **Emoción dominante**: Amor eterno y devoción
+#### Acto 3: La Fidelidad (2:30 - Fin)
+- **Objetivo**: André mantiene su amor por su esposa
+- **Escenas clave**: Él visita a las mujeres y les regala zapatos, la esposa llega
+- **Emoción dominante**: Fidelidad y amor verdadero
 
 ---
 
@@ -81,21 +82,22 @@ Un hombre campesino llanero describe a la mujer que ama. Sus amigos le preguntan
 ### Protagonista(s)
 | Nombre/Rol | Descripción | Vestuario | Propiedades |
 |------------|-------------|-----------|-------------|
-| El Narrador (campesino) | Hombre joven llanero, enamorado, sensible | Camisa de manga larga, pantalón de campo, sombrero | Guitarra, hamaca |
-| Ella (la morena) | Mujer natural, belleza campesina, misteriosa | Vestido sencillo, cabello suelto | Flor silvestre |
+| André (el cantante) | Hombre fiel, en la zapatería esperando a su esposa | Camisa elegante, jeans, zapatos bonitos | Caja de zapatos |
+| La Esposa (ella) | La mujer que él ama, la que llega al final | Vestido elegante, tacones | - |
 
 ### Figuras Secundarias
 | Nombre/Rol | Descripción | Aparición |
 |------------|-------------|-----------|
-| Los amigos | Grupo de campesinos curiosos | Verso 1, Coros |
-| El viento | Figura invisible que mueve todo | Todo el videoclip |
+| Mujer 1 (provocadora) | Sentada a su lado, busca su atención | Verso 1 |
+| Mujer 2 (provocadora) | Pide zapatos, pasa frente a él | Coro |
+| Mujer 3 (provocadora) | Lo mira, lo provoca | Verso 2 |
+| Amigos | Los que preguntan "¿quién es ella?" | Coros |
 
 ### Elementos Simbólicos
-- **Estrella**: Ella es luz en la oscuridad
-- **Palmera**: Ella es firme y hermosa
-- **Arena**: Sus huellas en su corazón
-- **Sol**: El ciclo del amor (alSalir el sol = esperanza)
-- **Arrebol**: El cielo de atardecer = pasión
+- **Caja de zapatos**: Regalo de amor / generosidad
+- **La zapatería**: Lugar de tentación y espera
+- **Los tacones**: Símbolo de feminidad y provocación
+- **La esposa que llega**: La dueña del corazón
 
 ---
 
@@ -103,11 +105,10 @@ Un hombre campesino llanero describe a la mujer que ama. Sus amigos le preguntan
 
 | Locación | Uso | Momento del día | Notas |
 |----------|-----|-----------------|-------|
-| Llanos venezolanos (sabana infinita) | Escenas principales, caminar | Atardecer/Amanecer | Sabana con pasto alto, horizonte abierto |
-| Bajo una palmera | Escena íntima, descripción | Tarde | Palmera solitaria, viento moviendo hojas |
-| Río o lago | Metáfora del espejo | Atardecer | Superficie calma que refleja el cielo |
-| Pueblo llanero | Escenas con amigos | Día | Calles de tierra, casas sencillas |
-| Cielo nocturno | Metáfora de la estrella | Noche | Cielo despejado, muchas estrellas |
+| Zapatería elegante | Escena principal, espera y provocación | Día | Interior moderno, zapatos de vitrina |
+| Domicilio de las mujeres | André regala zapatos | Tarde | Casas de ellas, diferentes escenarios |
+| Lugar de trabajo de las mujeres | André regala zapatos | Día | Oficinas, tiendas, salones |
+| Llegada de la esposa | Escena final, reencuentro | Atardecer | Entrada de la zapatería |
 
 ---
 
