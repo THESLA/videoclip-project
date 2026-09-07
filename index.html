@@ -3,288 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🎬 Videoclip Project - ¿Quién Es Ella?</title>
+    <title>🎬 Videoclip Project - ¿Quién Es Ella? - Fredy González</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: linear-gradient(135deg, #0c0c1d 0%, #1a1a2e 50%, #16213e 100%);
-            color: #e0e0e0;
-            min-height: 100vh;
-            line-height: 1.6;
+            color: #e0e0e0; min-height: 100vh; line-height: 1.6;
         }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-
+        .container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
         header {
-            text-align: center;
-            padding: 4rem 2rem;
-            background: rgba(0, 0, 0, 0.3);
-            border-bottom: 3px solid #e94560;
-            margin-bottom: 3rem;
+            text-align: center; padding: 4rem 2rem;
+            background: rgba(0,0,0,0.3); border-bottom: 3px solid #e94560; margin-bottom: 3rem;
         }
-
-        h1 {
-            font-size: 3rem;
-            color: #e94560;
-            text-shadow: 0 0 30px rgba(233, 69, 96, 0.5);
-            margin-bottom: 0.5rem;
-        }
-
-        .song-title {
-            font-size: 1.5rem;
-            color: #ffc107;
-            margin-bottom: 1rem;
-        }
-
-        .subtitle {
-            font-size: 1.1rem;
-            color: #a0a0a0;
-            margin-bottom: 1.5rem;
-        }
-
-        .badge {
-            display: inline-block;
-            padding: 0.4rem 1.2rem;
-            border-radius: 20px;
-            font-weight: bold;
-            font-size: 0.85rem;
-            margin: 0.3rem;
-        }
-
-        .badge.done {
-            background: rgba(40, 167, 69, 0.2);
-            color: #28a745;
-            border: 1px solid #28a745;
-        }
-
-        .badge.progress {
-            background: rgba(255, 193, 7, 0.2);
-            color: #ffc107;
-            border: 1px solid #ffc107;
-        }
-
-        .badge.pending {
-            background: rgba(108, 117, 125, 0.2);
-            color: #adb5bd;
-            border: 1px solid #6c757d;
-        }
-
-        .progress-bar {
-            width: 100%;
-            height: 8px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 4px;
-            margin: 1.5rem 0;
-            overflow: hidden;
-        }
-
-        .progress-fill {
-            height: 100%;
-            background: linear-gradient(90deg, #28a745, #ffc107);
-            border-radius: 4px;
-            transition: width 0.5s ease;
-        }
-
-        .section {
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: 15px;
-            padding: 2rem;
-            margin-bottom: 2rem;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .section h2 {
-            color: #e94560;
-            font-size: 1.6rem;
-            margin-bottom: 1rem;
-            display: flex;
-            align-items: center;
-            gap: 0.8rem;
-        }
-
-        .section h2 .icon {
-            font-size: 1.8rem;
-        }
-
-        .section p {
-            color: #b0b0b0;
-            margin-bottom: 1rem;
-            font-size: 1rem;
-        }
-
-        .card-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 1.2rem;
-            margin-top: 1rem;
-        }
-
-        .card {
-            border-radius: 10px;
-            padding: 1.3rem;
-            transition: all 0.3s ease;
-        }
-
-        .card.done {
-            background: rgba(40, 167, 69, 0.1);
-            border: 1px solid rgba(40, 167, 69, 0.3);
-        }
-
-        .card.pending {
-            background: rgba(108, 117, 125, 0.05);
-            border: 1px solid rgba(108, 117, 125, 0.2);
-        }
-
-        .card h3 {
-            margin-bottom: 0.6rem;
-            font-size: 1.1rem;
-        }
-
+        h1 { font-size: 3rem; color: #e94560; text-shadow: 0 0 30px rgba(233,69,96,0.5); margin-bottom: 0.5rem; }
+        .song-title { font-size: 1.5rem; color: #ffc107; margin-bottom: 0.5rem; }
+        .artist { font-size: 1.2rem; color: #61dafb; margin-bottom: 1rem; }
+        .subtitle { font-size: 1rem; color: #a0a0a0; margin-bottom: 1.5rem; }
+        .badge { display: inline-block; padding: 0.4rem 1rem; border-radius: 20px; font-weight: bold; font-size: 0.8rem; margin: 0.2rem; }
+        .badge.done { background: rgba(40,167,69,0.2); color: #28a745; border: 1px solid #28a745; }
+        .badge.pending { background: rgba(108,117,125,0.2); color: #adb5bd; border: 1px solid #6c757d; }
+        .progress-bar { width: 100%; height: 8px; background: rgba(255,255,255,0.1); border-radius: 4px; margin: 1.5rem 0; overflow: hidden; }
+        .progress-fill { height: 100%; background: linear-gradient(90deg, #28a745, #ffc107); border-radius: 4px; }
+        .section { background: rgba(255,255,255,0.05); border-radius: 15px; padding: 2rem; margin-bottom: 2rem; border: 1px solid rgba(255,255,255,0.1); }
+        .section h2 { color: #e94560; font-size: 1.5rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.8rem; }
+        .section h2 .icon { font-size: 1.6rem; }
+        .section p { color: #b0b0b0; margin-bottom: 1rem; font-size: 0.95rem; }
+        .section h3 { color: #ffc107; margin: 1.5rem 0 0.8rem 0; font-size: 1.1rem; }
+        .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin-top: 1rem; }
+        .card { border-radius: 10px; padding: 1.2rem; }
+        .card.done { background: rgba(40,167,69,0.1); border: 1px solid rgba(40,167,69,0.3); }
+        .card.pending { background: rgba(108,117,125,0.05); border: 1px solid rgba(108,117,125,0.2); }
+        .card h3 { margin-bottom: 0.5rem; font-size: 1rem; }
         .card.done h3 { color: #28a745; }
         .card.pending h3 { color: #6c757d; }
+        .card p { color: #a0a0a0; font-size: 0.85rem; margin-bottom: 0.3rem; }
+        .tag { display: inline-block; padding: 0.15rem 0.6rem; border-radius: 10px; font-size: 0.65rem; font-weight: bold; }
+        .tag.done { background: rgba(40,167,69,0.3); color: #28a745; }
+        .tag.pending { background: rgba(108,117,125,0.2); color: #adb5bd; }
 
-        .card p {
-            color: #a0a0a0;
-            font-size: 0.9rem;
-            margin-bottom: 0.5rem;
-        }
+        /* LYRICS */
+        .lyrics-box { background: rgba(233,69,96,0.05); border: 1px solid rgba(233,69,96,0.2); border-radius: 10px; padding: 1.5rem; margin-top: 1rem; font-family: 'Georgia', serif; color: #d0d0d0; line-height: 1.9; }
+        .lyrics-box .section-label { color: #ffc107; font-weight: bold; font-style: normal; font-family: 'Segoe UI', sans-serif; font-size: 0.85rem; display: block; margin-top: 1rem; margin-bottom: 0.3rem; }
+        .lyrics-box .section-label:first-child { margin-top: 0; }
+        .lyrics-box .coro { color: #e94560; }
 
-        .tag {
-            display: inline-block;
-            padding: 0.2rem 0.7rem;
-            border-radius: 10px;
-            font-size: 0.7rem;
-            font-weight: bold;
-        }
+        /* TIMELINE TABLE */
+        .timeline-table { width: 100%; border-collapse: collapse; margin-top: 1rem; font-size: 0.85rem; }
+        .timeline-table th { background: rgba(233,69,96,0.2); color: #e94560; padding: 0.7rem 0.5rem; text-align: left; font-size: 0.8rem; }
+        .timeline-table td { padding: 0.6rem 0.5rem; border-bottom: 1px solid rgba(255,255,255,0.05); color: #b0b0b0; vertical-align: top; }
+        .timeline-table tr:hover { background: rgba(255,255,255,0.03); }
+        .timeline-table .time { color: #61dafb; font-weight: bold; font-family: monospace; white-space: nowrap; }
+        .timeline-table .lyric { color: #ffc107; font-style: italic; font-family: 'Georgia', serif; }
+        .timeline-table .action { color: #e0e0e0; }
+        .timeline-table .camera { color: #28a745; font-weight: bold; }
+        .timeline-table .highlight { background: rgba(233,69,96,0.1); }
+        .timeline-table .slow-mo { background: rgba(255,193,7,0.1); }
 
-        .tag.done {
-            background: rgba(40, 167, 69, 0.3);
-            color: #28a745;
-        }
+        /* CONCEPTO */
+        .concepto-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; margin-top: 1rem; }
+        .concepto-item { background: rgba(255,193,7,0.05); border: 1px solid rgba(255,193,7,0.2); border-radius: 8px; padding: 1rem; }
+        .concepto-item h4 { color: #ffc107; margin-bottom: 0.5rem; font-size: 0.9rem; }
+        .concepto-item p { color: #a0a0a0; font-size: 0.85rem; margin: 0; }
 
-        .tag.pending {
-            background: rgba(108, 117, 125, 0.2);
-            color: #adb5bd;
-        }
+        /* PERSONAJES */
+        .personajes-table { width: 100%; border-collapse: collapse; margin-top: 1rem; font-size: 0.85rem; }
+        .personajes-table th { background: rgba(233,69,96,0.2); color: #e94560; padding: 0.6rem; text-align: left; }
+        .personajes-table td { padding: 0.6rem; border-bottom: 1px solid rgba(255,255,255,0.05); color: #b0b0b0; }
 
-        .detail-box {
-            background: rgba(0, 0, 0, 0.2);
-            border-radius: 8px;
-            padding: 1rem;
-            margin-top: 0.8rem;
-            font-size: 0.85rem;
-            color: #c0c0c0;
-        }
+        /* LOCACIONES */
+        .locaciones-list { list-style: none; margin-top: 1rem; }
+        .locaciones-list li { padding: 0.7rem 1rem; background: rgba(255,255,255,0.03); border-left: 3px solid #e94560; margin-bottom: 0.5rem; border-radius: 0 5px 5px 0; color: #b0b0b0; font-size: 0.9rem; }
+        .locaciones-list li strong { color: #e0e0e0; }
 
-        .detail-box strong {
-            color: #ffc107;
-        }
+        /* ACTOS */
+        .actos-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1rem; margin-top: 1rem; }
+        .acto-card { border-radius: 10px; padding: 1.2rem; }
+        .acto-card.a1 { background: rgba(40,167,69,0.1); border: 1px solid rgba(40,167,69,0.3); }
+        .acto-card.a2 { background: rgba(255,193,7,0.1); border: 1px solid rgba(255,193,7,0.3); }
+        .acto-card.a3 { background: rgba(233,69,96,0.1); border: 1px solid rgba(233,69,96,0.3); }
+        .acto-card h3 { font-size: 1rem; margin-bottom: 0.5rem; }
+        .acto-card.a1 h3 { color: #28a745; }
+        .acto-card.a2 h3 { color: #ffc107; }
+        .acto-card.a3 h3 { color: #e94560; }
+        .acto-card p { font-size: 0.85rem; margin: 0.3rem 0; }
 
-        .lyrics-box {
-            background: rgba(233, 69, 96, 0.05);
-            border: 1px solid rgba(233, 69, 96, 0.2);
-            border-radius: 10px;
-            padding: 1.5rem;
-            margin-top: 1rem;
-            font-family: 'Georgia', serif;
-            font-style: italic;
-            color: #d0d0d0;
-            line-height: 1.8;
-        }
-
-        .lyrics-box .coro {
-            color: #ffc107;
-            font-weight: bold;
-        }
-
-        .concepto-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1rem;
-            margin-top: 1rem;
-        }
-
-        .concepto-item {
-            background: rgba(255, 193, 7, 0.05);
-            border: 1px solid rgba(255, 193, 7, 0.2);
-            border-radius: 8px;
-            padding: 1rem;
-        }
-
-        .concepto-item h4 {
-            color: #ffc107;
-            margin-bottom: 0.5rem;
-            font-size: 0.95rem;
-        }
-
-        .concepto-item p {
-            color: #a0a0a0;
-            font-size: 0.85rem;
-            margin: 0;
-        }
-
-        .personajes-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 1rem;
-            font-size: 0.9rem;
-        }
-
-        .personajes-table th {
-            background: rgba(233, 69, 96, 0.2);
-            color: #e94560;
-            padding: 0.7rem;
-            text-align: left;
-        }
-
-        .personajes-table td {
-            padding: 0.7rem;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-            color: #b0b0b0;
-        }
-
-        .locaciones-list {
-            list-style: none;
-            margin-top: 1rem;
-        }
-
-        .locaciones-list li {
-            padding: 0.8rem 1rem;
-            background: rgba(255, 255, 255, 0.03);
-            border-left: 3px solid #e94560;
-            margin-bottom: 0.5rem;
-            border-radius: 0 5px 5px 0;
-            color: #b0b0b0;
-        }
-
-        .locaciones-list li strong {
-            color: #e0e0e0;
-        }
-
-        footer {
-            text-align: center;
-            padding: 2rem;
-            margin-top: 3rem;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            color: #606060;
-            font-size: 0.85rem;
-        }
+        footer { text-align: center; padding: 2rem; margin-top: 3rem; border-top: 1px solid rgba(255,255,255,0.1); color: #606060; font-size: 0.85rem; }
     </style>
 </head>
 <body>
     <header>
         <h1>🎬 Videoclip Project</h1>
-        <p class="song-title">🎵 "¿Quién Es Ella?" — Fredy González</p>
+        <p class="song-title">🎵 "¿Quién Es Ella?"</p>
+        <p class="artist">🎤 Fredy González</p>
         <p class="subtitle">Música Llanera / Sabanera — Documentación de Producción del Videoclip</p>
         <div>
             <span class="badge done">✅ Letra</span>
@@ -293,62 +104,96 @@
             <span class="badge pending">⏳ Storyboard</span>
             <span class="badge pending">⏳ Producción</span>
         </div>
-        <div class="progress-bar">
-            <div class="progress-fill" style="width: 55%"></div>
-        </div>
+        <div class="progress-bar"><div class="progress-fill" style="width: 55%"></div></div>
         <p style="color: #6c757d; font-size: 0.85rem;">Progreso: 55% completado</p>
     </header>
 
     <div class="container">
 
-        <!-- CANCIÓN -->
+        <!-- ==================== CANCIÓN ==================== -->
         <section class="section">
-            <h2><span class="icon">🎵</span> La Canción</h2>
-            <p>Letra completa de "¿Quién Es Ella?" — Música llanera venezolana</p>
+            <h2><span class="icon">🎵</span> La Canción — Letra Completa</h2>
+            <p>"¿Quién Es Ella?" — Fredy González — Música Llanera / Sabanera</p>
 
             <div class="card-grid">
                 <div class="card done">
-                    <h3>📝 Letra Completa</h3>
-                    <p>3 versos + 2 coros + outro. Tema: amor, fidelidad, naturaleza llanera.</p>
+                    <h3>📝 Letra</h3>
+                    <p>34 líneas — 3 versos + 2 coros + outro</p>
                     <span class="tag done">COMPLETADO</span>
                 </div>
                 <div class="card done">
-                    <h3>🎶 Género Musical</h3>
-                    <p>Música Llanera / Sabanera — Venezolano / Campesino</p>
+                    <h3>🎤 Artista</h3>
+                    <p>Fredy González</p>
                     <span class="tag done">DEFINIDO</span>
                 </div>
                 <div class="card done">
-                    <h3>🎤 Artista</h3>
-                    <p>Fredy González — Cantante</p>
+                    <h3>🎶 Género</h3>
+                    <p>Música Llanera / Sabanera Venezolana</p>
                     <span class="tag done">DEFINIDO</span>
+                </div>
+                <div class="card done">
+                    <h3>⏱️ Duración</h3>
+                    <p>Aproximadamente 2:55 minutos</p>
+                    <span class="tag done">ESTIMADO</span>
                 </div>
             </div>
 
             <div class="lyrics-box">
-                <p><strong>Verso 1</strong></p>
-                <p>¿Y cómo es ella?, me preguntan mis amigos,<br>
+                <span class="section-label">VERSO 1</span>
+                ¿Y cómo es ella?, me preguntan mis amigos,<br>
                 únicamente les digo: solo ternura y pasión.<br>
                 ¿Que si es bonita?, me preguntan y les digo:<br>
-                mi morena es lo más lindo de toda la creación.</p>
+                mi morena es lo más lindo de toda la creación.
 
-                <p class="coro"><strong>Coro 1</strong></p>
-                <p class="coro">¿Que cómo es ella? Que ella es la más bella,<br>
+                <span class="section-label coro">CORO 1</span>
+                <span class="coro">¿Que cómo es ella? Que ella es la más bella,<br>
                 que es como una estrella, que ella es la doncella<br>
                 que marcó sus huellas en la suave arena de mi corazón,<br>
-                que no conoce de envidia, mucho menos de traición.</p>
+                que no conoce de envidia, mucho menos de traición.</span>
 
-                <p class="coro"><strong>Coro 2</strong></p>
-                <p class="coro">¿Que si es llanera? Que es muy sabanera,<br>
+                <span class="section-label coro">CORO 2</span>
+                <span class="coro">¿Que si es llanera? Que es muy sabanera,<br>
                 que es como palmera, que su cabellera<br>
                 es la que desvela mi sentimiento lleno de ilusión,<br>
-                que si una noche me deja, me muero al salir el sol.</p>
+                que si una noche me deja, me muero al salir el sol.</span>
+
+                <span class="section-label">VERSO 2</span>
+                ¿Y quién es ella?, me preguntan por la calle,<br>
+                mi morena es el detalle más lindo que Dios me dio.<br>
+                Es atractiva, seductora y sensitiva,<br>
+                me enseñó que toda falta viene huyéndole a un perdón.
+
+                <span class="section-label">VERSO 3</span>
+                Tiene un cuerpazo de aquellos que incitan a darle un abrazo,<br>
+                como un espejito brillan sus ojazos en los que de tarde, cuando hay arrebol,<br>
+                se ve reflejado el llano y hasta llanera es su voz.<br>
+                Consentidora, es la más bonita, fiel y encantadora,<br>
+                yo la quiero mucho, dice que me adora, creo que quedó clara la interrogación:<br>
+                mi morena es la que carga loquito a mi corazón.
+
+                <span class="section-label coro">CORO 1 (Repetición)</span>
+                <span class="coro">¿Que cómo es ella? Que ella es la más bella,<br>
+                que es como una estrella, que ella es la doncella<br>
+                que marcó sus huellas en la suave arena de mi corazón,<br>
+                que no conoce de envidia, mucho menos de traición.</span>
+
+                <span class="section-label coro">CORO 2 (Repetición)</span>
+                <span class="coro">¿Que si es llanera? Que es muy sabanera,<br>
+                que es como palmera, que su cabellera<br>
+                es la que desvela mi sentimiento lleno de ilusión,<br>
+                que si una noche me deja, me muero al salir el sol.</span>
+
+                <span class="section-label coro">OUTRO</span>
+                <span class="coro">¿Que cómo es ella? Que ella es la más bella,<br>
+                que es como una estrella, que ella es la doncella<br>
+                que marcó sus huellas en la suave arena de mi corazón,</span>
             </div>
         </section>
 
-        <!-- CONCEPTO CREATIVO -->
+        <!-- ==================== CONCEPTO ==================== -->
         <section class="section">
             <h2><span class="icon">🎨</span> Concepto Creativo</h2>
-            <p>La historia del videoclip: fidelidad, tentación y amor verdadero</p>
+            <p>La historia: fidelidad, tentación y amor verdadero en una zapatería</p>
 
             <div class="concepto-grid">
                 <div class="concepto-item">
@@ -357,278 +202,207 @@
                 </div>
                 <div class="concepto-item">
                     <h4>💃 La Tentación</h4>
-                    <p>Otras mujeres lo provocan: se sientan a su lado, piden zapatos, pasan frente a él.</p>
+                    <p>6-9 mujeres lo provocan: se sientan, se quitan zapatos, le tocan el cabello.</p>
                 </div>
                 <div class="concepto-item">
-                    <h4>💎 La Fidelidad</h4>
-                    <p>André no cede. Su corazón pertenece a su esposa. Piensa en ella constantemente.</p>
+                    <h4>💪 La Fidelidad</h4>
+                    <p>André es llanero coqueto pero no cede. Su corazón es de su esposa.</p>
                 </div>
                 <div class="concepto-item">
                     <h4>🎁 El Regalo</h4>
-                    <p>Visita a cada mujer y les regala una caja de zapatos. Generosidad sin compromiso.</p>
+                    <p>Visita a cada mujer y les regala una caja de zapatos. Generosidad.</p>
                 </div>
-            </div>
-
-            <div class="detail-box" style="margin-top: 1.5rem;">
-                <strong>Mensaje:</strong> Fidelidad y amor verdadero frente a la tentación<br>
-                <strong>Metáfora visual:</strong> Zapatos = regalo de amor / generosidad<br>
-                <strong>Arco emocional:</strong> De la tentación a la fidelidad, del deseo al compromiso
             </div>
         </section>
 
-        <!-- PERSONAJES -->
+        <!-- ==================== PERSONAJES ==================== -->
         <section class="section">
             <h2><span class="icon">👥</span> Personajes</h2>
             <p>Elenco del videoclip</p>
 
             <table class="personajes-table">
                 <thead>
-                    <tr>
-                        <th>Personaje</th>
-                        <th>Descripción</th>
-                        <th>Vestuario</th>
-                        <th>Estado</th>
-                    </tr>
+                    <tr><th>Personaje</th><th>Descripción</th><th>Vestuario</th><th>Estado</th></tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td><strong>André</strong> (el cantante)</td>
-                        <td>Hombre fiel, en la zapatería esperando a su esposa</td>
-                        <td>Camisa elegante, jeans, zapatos bonitos</td>
-                        <td><span class="tag done">DEFINIDO</span></td>
-                    </tr>
-                    <tr>
-                        <td><strong>La Esposa</strong> (ella)</td>
-                        <td>La mujer que él ama, la que llega al final</td>
-                        <td>Vestido elegante, tacones</td>
-                        <td><span class="tag done">DEFINIDO</span></td>
-                    </tr>
-                    <tr>
-                        <td><strong>Mujer 1</strong> (provocadora)</td>
-                        <td>Sentada a su lado, busca su atención</td>
-                        <td>Por definir</td>
-                        <td><span class="tag done">DEFINIDO</span></td>
-                    </tr>
-                    <tr>
-                        <td><strong>Mujer 2</strong> (provocadora)</td>
-                        <td>Pide zapatos, pasa frente a él</td>
-                        <td>Por definir</td>
-                        <td><span class="tag done">DEFINIDO</span></td>
-                    </tr>
-                    <tr>
-                        <td><strong>Mujer 3</strong> (provocadora)</td>
-                        <td>Lo mira, lo provoca</td>
-                        <td>Por definir</td>
-                        <td><span class="tag done">DEFINIDO</span></td>
-                    </tr>
+                    <tr><td><strong>André</strong> (Fredy)</td><td>Llanero coqueto, fiel, esperando a su esposa</td><td>Camisa elegante, jeans, zapatos bonitos</td><td><span class="tag done">OK</span></td></tr>
+                    <tr><td><strong>La Esposa</strong></td><td>La que él ama, llega al final. La más bella.</td><td>Vestido elegante, tacones</td><td><span class="tag done">OK</span></td></tr>
+                    <tr><td><strong>Mujer 1</strong></td><td>Se sienta, se quita zapatos, se turba</td><td>Por definir</td><td><span class="tag done">OK</span></td></tr>
+                    <tr><td><strong>Mujer 2</strong></td><td>Le toca el cabello, hace conversación</td><td>Por definir</td><td><span class="tag done">OK</span></td></tr>
+                    <tr><td><strong>Mujer 3</strong></td><td>Pide zapatos, pasa frente a él</td><td>Por definir</td><td><span class="tag done">OK</span></td></tr>
+                    <tr><td><strong>Mujer 4-6</strong></td><td>Más mujeres que llegan y provocan</td><td>Por definir</td><td><span class="tag done">OK</span></td></tr>
+                    <tr><td><strong>Mujer 7-9</strong></td><td>Máxima provocación, se sientan encima</td><td>Por definir</td><td><span class="tag done">OK</span></td></tr>
                 </tbody>
             </table>
         </section>
 
-        <!-- LOCACIONES -->
+        <!-- ==================== LOCACIONES ==================== -->
         <section class="section">
             <h2><span class="icon">📍</span> Locaciones</h2>
-            <p>Espacios filmación del videoclip</p>
+            <p>Espacios de filmación</p>
 
             <ul class="locaciones-list">
-                <li><strong>Zapatería elegante</strong> — Escena principal, espera y provocación. Interior moderno.</li>
-                <li><strong>Domicilio de las mujeres</strong> — André regala zapatos. Diferentes escenarios.</li>
-                <li><strong>Lugar de trabajo de las mujeres</strong> — Oficinas, tiendas, salones.</li>
-                <li><strong>Entrada de la zapatería</strong> — Llegada de la esposa. Reencuentro final.</li>
+                <li><strong>Zapatería elegante</strong> — Escena principal. Interior moderno, vitrinas, sillón grande al centro. <span class="tag pending">POR UBICAR</span></li>
+                <li><strong>Domicilio de las mujeres</strong> — André regala zapatos. Opcional por cliente.</li>
+                <li><strong>Lugar de trabajo de las mujeres</strong> — Oficinas, tiendas. Opcional por cliente.</li>
+                <li><strong>Entrada de la zapatería</strong> — Llegada de la esposa. Luz dorada de atardecer.</li>
             </ul>
         </section>
 
-        <!-- ESTRUCTURA NARRATIVA -->
+        <!-- ==================== ESTRUCTURA 3 ACTOS ==================== -->
         <section class="section">
             <h2><span class="icon">📖</span> Estructura en 3 Actos</h2>
-            <p>Narrativa del videoclip dividida en tres momentos</p>
+            <p>Narrativa del videoclip</p>
 
-            <div class="card-grid">
-                <div class="card done">
-                    <h3>Acto 1: La Espera</h3>
-                    <p><strong>0:00 - 0:45</strong><br>
-                    André en la zapatería, mirando la puerta. Las mujeres empiezan a llegar y provocarlo.</p>
-                    <span class="tag done">DEFINIDO</span>
+            <div class="actos-grid">
+                <div class="acto-card a1">
+                    <h3>Acto 1: La Espera (0:00 - 0:45)</h3>
+                    <p>André llega solo a la zapatería. Se sienta. Espera.</p>
+                    <p>Las mujeres empiezan a llegar y provocarlo.</p>
+                    <p><strong>Emoción:</strong> Expectativa, curiosidad</p>
                 </div>
-                <div class="card done">
-                    <h3>Acto 2: La Tentación</h3>
-                    <p><strong>0:45 - 2:30</strong><br>
-                    Las mujeres lo provocan activamente. Se sientan, piden zapatos, pasan frente a él.</p>
-                    <span class="tag done">DEFINIDO</span>
+                <div class="acto-card a2">
+                    <h3>Acto 2: La Tentación (0:45 - 2:10)</h3>
+                    <p>6-9 mujeres lo provocan activamente.</p>
+                    <p>Se sientan, tocan, hablan, pasan frente a él.</p>
+                    <p>André coquetea pero mira la puerta.</p>
+                    <p><strong>Emoción:</strong> Tentación, conflicto, deseo</p>
                 </div>
-                <div class="card done">
-                    <h3>Acto 3: La Fidelidad</h3>
-                    <p><strong>2:30 - Fin</strong><br>
-                    André visita a las mujeres y les regala zapatos. Su esposa llega. Reencuentro.</p>
-                    <span class="tag done">DEFINIDO</span>
+                <div class="acto-card a3">
+                    <h3>Acto 3: La Fidelidad (2:10 - 2:55)</h3>
+                    <p>La esposa entra (RALENTIZADO 120fps).</p>
+                    <p>Se sienta, conversan, beso.</p>
+                    <p>Él le pone el zapato. Las mujeres se van.</p>
+                    <p><strong>Emoción:</strong> Amor, felicidad, cierre</p>
                 </div>
             </div>
         </section>
 
-        <!-- GUIÓN VISUAL -->
+        <!-- ==================== GUION VISUAL POR TIEMPO ==================== -->
         <section class="section">
-            <h2><span class="icon">📜</span> Guión Visual</h2>
-            <p>Detalle escena por escena del videoclip</p>
+            <h2><span class="icon">⏱️</span> Guión Visual por Tiempo</h2>
+            <p>Cada segundo de la canción con qué planos usamos</p>
 
-            <div class="card-grid">
-                <div class="card done">
-                    <h3>📜 Guión Visual</h3>
-                    <p>8 escenas detalladas: llegada, provocación, coros, esposa, outro.</p>
-                    <span class="tag done">COMPLETADO</span>
-                </div>
-                <div class="card pending">
-                    <h3>Timeline General</h3>
-                    <p>Cronograma visual sincronizado con la canción.</p>
-                    <span class="tag pending">PENDIENTE</span>
-                </div>
-                <div class="card pending">
-                    <h3>Notas de Edición</h3>
-                    <p>Ritmo, transiciones, color grading por escena.</p>
-                    <span class="tag pending">PENDIENTE</span>
-                </div>
-            </div>
+            <h3>🟢 Intro (0:00 - 0:25)</h3>
+            <table class="timeline-table">
+                <thead><tr><th>Tiempo</th><th>Letra / Audio</th><th>Acción en Pantalla</th><th>Plano de Cámara</th></tr></thead>
+                <tbody>
+                    <tr><td class="time">0:00 - 0:05</td><td class="lyric">Intro instrumental</td><td class="action">Zapatería vacía, se encienden las luces</td><td class="camera">Plano general cenital</td></tr>
+                    <tr><td class="time">0:05 - 0:12</td><td class="lyric">Intro</td><td class="action">André abre la puerta y entra solo</td><td class="camera">General → Medio</td></tr>
+                    <tr><td class="time">0:12 - 0:18</td><td class="lyric">Intro</td><td class="action">Camina por la zapatería, mira zapatos</td><td class="camera">Travelling siguiéndolo</td></tr>
+                    <tr><td class="time">0:18 - 0:25</td><td class="lyric">Intro</td><td class="action">Se sienta en el sillón del centro</td><td class="camera">Medio → Detalle (sentarse)</td></tr>
+                </tbody>
+            </table>
+
+            <h3>🔵 Verso 1 (0:25 - 0:45)</h3>
+            <table class="timeline-table">
+                <thead><tr><th>Tiempo</th><th>Letra</th><th>Acción</th><th>Plano</th></tr></thead>
+                <tbody>
+                    <tr><td class="time">0:25 - 0:30</td><td class="lyric">"¿Y cómo es ella?, me preguntan mis amigos"</td><td class="action">André sentado, sonriendo, recuerda</td><td class="camera">Primer plano (cara)</td></tr>
+                    <tr><td class="time">0:30 - 0:35</td><td class="lyric">"únicamente les digo: solo ternura y pasión"</td><td class="action">Flashback rápido: ella sonriendo</td><td class="camera">Plano medio ella</td></tr>
+                    <tr><td class="time">0:35 - 0:40</td><td class="lyric">"¿Que si es bonita?, me preguntan y les digo"</td><td class="action">La puerta se abre, entra Mujer 1</td><td class="camera">General puerta</td></tr>
+                    <tr><td class="time">0:40 - 0:45</td><td class="lyric">"mi morena es lo más lindo de toda la creación"</td><td class="action">Mujer 1 se sienta a su lado, lo mira</td><td class="camera">Contraplano André ↔ Mujer 1</td></tr>
+                </tbody>
+            </table>
+
+            <h3>🔴 Coro 1 (0:45 - 1:05)</h3>
+            <table class="timeline-table">
+                <thead><tr><th>Tiempo</th><th>Letra</th><th>Acción</th><th>Plano</th></tr></thead>
+                <tbody>
+                    <tr><td class="time">0:45 - 0:50</td><td class="lyric">"¿Que cómo es ella? Que ella es la más bella"</td><td class="action">André de pie, canta a cámara, zapatos de fondo</td><td class="camera">Medio André cantando</td></tr>
+                    <tr><td class="time">0:50 - 0:55</td><td class="lyric">"que es como una estrella, que ella es la doncella"</td><td class="action">Flashback: ella caminando bajo estrellas</td><td class="camera">General nocturno</td></tr>
+                    <tr><td class="time">0:55 - 1:00</td><td class="lyric">"que marcó sus huellas en la suave arena de mi corazón"</td><td class="action">Pies caminando en arena, huellas</td><td class="camera">Detalle pies</td></tr>
+                    <tr><td class="time">1:00 - 1:05</td><td class="lyric">"que no conoce de envidia, mucho menos de traición"</td><td class="action">André sonríe, vuelve a zapatería</td><td class="camera">Primer plano cara</td></tr>
+                </tbody>
+            </table>
+
+            <h3>🟡 Coro 2 (1:05 - 1:20)</h3>
+            <table class="timeline-table">
+                <thead><tr><th>Tiempo</th><th>Letra</th><th>Acción</th><th>Plano</th></tr></thead>
+                <tbody>
+                    <tr><td class="time">1:05 - 1:10</td><td class="lyric">"¿Que si es llanera? Que es muy sabanera"</td><td class="action">Mujer 2 llega, se sienta, provoca</td><td class="camera">Medio llegada</td></tr>
+                    <tr><td class="time">1:10 - 1:15</td><td class="lyric">"que es como palmera, que su cabellera"</td><td class="action">Ella se quita el pelo, pelo al viento</td><td class="camera">Detalle cabello</td></tr>
+                    <tr><td class="time">1:15 - 1:18</td><td class="lyric">"es la que desvela mi sentimiento lleno de ilusión"</td><td class="action">André la mira, sonríe, coquetea</td><td class="camera">Contraplano</td></tr>
+                    <tr><td class="time">1:18 - 1:20</td><td class="lyric">"que si una noche me deja, me muero al salir el sol"</td><td class="action">André mira la puerta, espera</td><td class="camera">Medio + mirada</td></tr>
+                </tbody>
+            </table>
+
+            <h3>🔵 Verso 2 (1:20 - 1:40)</h3>
+            <table class="timeline-table">
+                <thead><tr><th>Tiempo</th><th>Letra</th><th>Acción</th><th>Plano</th></tr></thead>
+                <tbody>
+                    <tr><td class="time">1:20 - 1:25</td><td class="lyric">"¿Y quién es ella?, me preguntan por la calle"</td><td class="action">Mujer 3 entra caminando por la calle</td><td class="camera">General exterior</td></tr>
+                    <tr><td class="time">1:25 - 1:30</td><td class="lyric">"mi morena es el detalle más lindo que Dios me dio"</td><td class="action">Entra a zapatería, lo busca con la mirada</td><td class="camera">Tracking detrás de ella</td></tr>
+                    <tr><td class="time">1:30 - 1:35</td><td class="lyric">"Es atractiva, seductora y sensitiva"</td><td class="action">Se sienta cerca, le toca el brazo</td><td class="camera">Medio + detalle mano</td></tr>
+                    <tr><td class="time">1:35 - 1:40</td><td class="lyric">"me enseñó que toda falta viene huyéndole a un perdón"</td><td class="action">André se turba, pero resiste</td><td class="camera">Primer plano cara</td></tr>
+                </tbody>
+            </table>
+
+            <h3>🟠 Verso 3 (1:40 - 2:10)</h3>
+            <table class="timeline-table">
+                <thead><tr><th>Tiempo</th><th>Letra</th><th>Acción</th><th>Plano</th></tr></thead>
+                <tbody>
+                    <tr><td class="time">1:40 - 1:45</td><td class="lyric">"Tiene un cuerpazo de aquellos que incitan a darle un abrazo"</td><td class="action">Mujer 4-5-6 llegan, rodean a André</td><td class="camera">General: 3 mujeres</td></tr>
+                    <tr><td class="time">1:45 - 1:50</td><td class="lyric">"como un espejito brillan sus ojazos"</td><td class="action">Plano de ojos brillando (espejo)</td><td class="camera">Detalle ojos</td></tr>
+                    <tr><td class="time">1:50 - 1:55</td><td class="lyric">"en los que de tarde, cuando hay arrebol"</td><td class="action">Flashback: cielo atardecer rojizo</td><td class="camera">General cielo</td></tr>
+                    <tr><td class="time">1:55 - 2:00</td><td class="lyric">"se ve reflejado el llano y hasta llanera es su voz"</td><td class="action">Reflejo en espejo/lago</td><td class="camera">Reflejo</td></tr>
+                    <tr class="highlight"><td class="time">2:00 - 2:05</td><td class="lyric">"Consentidora, es la más bonita, fiel y encantadora"</td><td class="action">Todas las mujeres alrededor, máxima tensión</td><td class="camera">Cenital: André rodeado</td></tr>
+                    <tr><td class="time">2:05 - 2:08</td><td class="lyric">"yo la quiero mucho, dice que me adora"</td><td class="action">André se levanta, busca la puerta</td><td class="camera">Medio: de pie</td></tr>
+                    <tr><td class="time">2:08 - 2:10</td><td class="lyric">"mi morena es la que carga loquito a mi corazón"</td><td class="action">La puerta se abre, silueta dorada</td><td class="camera">General puerta</td></tr>
+                </tbody>
+            </table>
+
+            <h3>⭐ Coro 1 Repetición — LA ESPOSA LLEGA (2:10 - 2:28)</h3>
+            <table class="timeline-table">
+                <thead><tr><th>Tiempo</th><th>Letra</th><th>Acción</th><th>Plano</th></tr></thead>
+                <tbody>
+                    <tr class="slow-mo"><td class="time">2:10 - 2:13</td><td class="lyric">"¿Que cómo es ella? Que ella es la más bella"</td><td class="action">LA ESPOSA ENTRA — Luz dorada, ralentizado</td><td class="camera">⭐ 120fps General</td></tr>
+                    <tr class="slow-mo"><td class="time">2:13 - 2:17</td><td class="lyric">"que es como una estrella, que ella es la doncella"</td><td class="action">Camina hacia André, todo ralentizado</td><td class="camera">⭐ 120fps Tracking</td></tr>
+                    <tr class="slow-mo"><td class="time">2:17 - 2:20</td><td class="lyric">"que marcó sus huellas en la suave arena de mi corazón"</td><td class="action">Se sienta a su lado, se miran</td><td class="camera">⭐ 120fps Medio</td></tr>
+                    <tr class="slow-mo"><td class="time">2:20 - 2:23</td><td class="lyric">"que no conoce de envidia, mucho menos de traición"</td><td class="action">Él le toma la mano</td><td class="camera">⭐ 120fps Detalle manos</td></tr>
+                    <tr class="slow-mo"><td class="time">2:23 - 2:25</td><td class="lyric">—</td><td class="action">André se arrodilla</td><td class="camera">⭐ 120fps Medio</td></tr>
+                    <tr class="slow-mo"><td class="time">2:25 - 2:28</td><td class="lyric">—</td><td class="action">LE PONE EL ZAPATO EN EL PIE</td><td class="camera">⭐ 120fps Detalle zapato</td></tr>
+                </tbody>
+            </table>
+
+            <h3>🔴 Coro 2 Repetición — EL BESO (2:28 - 2:45)</h3>
+            <table class="timeline-table">
+                <thead><tr><th>Tiempo</th><th>Letra</th><th>Acción</th><th>Plano</th></tr></thead>
+                <tbody>
+                    <tr class="slow-mo"><td class="time">2:28 - 2:32</td><td class="lyric">"¿Que si es llanera? Que es muy sabanera"</td><td class="action">Se besan — ralentizado</td><td class="camera">⭐ 120fps Primer beso</td></tr>
+                    <tr><td class="time">2:32 - 2:36</td><td class="lyric">"que es como palmera, que su cabellera"</td><td class="action">Las mujeres miran, reaccionan</td><td class="camera">Medio: grupo mujeres</td></tr>
+                    <tr><td class="time">2:36 - 2:40</td><td class="lyric">"es la que desvela mi sentimiento lleno de ilusión"</td><td class="action">Expresiones: "ay no", "está casado"</td><td class="camera">Primer planos caras</td></tr>
+                    <tr><td class="time">2:40 - 2:45</td><td class="lyric">"que si una noche me deja, me muero al salir el sol"</td><td class="action">Una por una se van</td><td class="camera">General: salen</td></tr>
+                </tbody>
+            </table>
+
+            <h3>⚫ Outro (2:45 - 2:55)</h3>
+            <table class="timeline-table">
+                <thead><tr><th>Tiempo</th><th>Letra</th><th>Acción</th><th>Plano</th></tr></thead>
+                <tbody>
+                    <tr><td class="time">2:45 - 2:48</td><td class="lyric">"¿Que cómo es ella? Que ella es la más bella"</td><td class="action">Zapatería vacía, solo ellos dos</td><td class="camera">General</td></tr>
+                    <tr><td class="time">2:48 - 2:50</td><td class="lyric">"que es como una estrella, que ella es la doncella"</td><td class="action">Se sientan juntos, brazo alrededor</td><td class="camera">Medio</td></tr>
+                    <tr><td class="time">2:50 - 2:53</td><td class="lyric">"que marcó sus huellas en la suave arena de mi corazón"</td><td class="action">Ella apoya cabeza en su hombro</td><td class="camera">Medio cerrado</td></tr>
+                    <tr><td class="time">2:53 - 2:55</td><td class="lyric">—</td><td class="action">Se miran, sonríen. FUNDIDO A NEGRO.</td><td class="camera">Fundido final</td></tr>
+                </tbody>
+            </table>
         </section>
 
-        <!-- STORYBOARD -->
-        <section class="section">
-            <h2><span class="icon">🎬</span> Storyboard</h2>
-            <p>Visualización de planos antes de la producción</p>
-
-            <div class="card-grid">
-                <div class="card pending">
-                    <h3>Plantilla por Escena</h3>
-                    <p>Estructura con tipo de plano, movimiento de cámara y acción.</p>
-                    <span class="tag pending">PENDIENTE</span>
-                </div>
-                <div class="card pending">
-                    <h3>Resumen de Tomas</h3>
-                    <p>Tabla de tomas necesarias por escena.</p>
-                    <span class="tag pending">PENDIENTE</span>
-                </div>
-            </div>
-        </section>
-
-        <!-- STYLE GUIDE -->
-        <section class="section">
-            <h2><span class="icon">🎨</span> Style Guide</h2>
-            <p>Guía de estilo visual para mantener consistencia</p>
-
-            <div class="card-grid">
-                <div class="card pending">
-                    <h3>Paleta de Colores</h3>
-                    <p>Colores principales, secundarios y acentos.</p>
-                    <span class="tag pending">PENDIENTE</span>
-                </div>
-                <div class="card pending">
-                    <h3>Iluminación</h3>
-                    <p>Esquemas de luz por escena.</p>
-                    <span class="tag pending">PENDIENTE</span>
-                </div>
-                <div class="card pending">
-                    <h3>Vestuario</h3>
-                    <p>Diseño de vestuario por personaje.</p>
-                    <span class="tag pending">PENDIENTE</span>
-                </div>
-                <div class="card pending">
-                    <h3>Movimiento de Cámara</h3>
-                    <p>Estilo general y movimientos por escena.</p>
-                    <span class="tag pending">PENDIENTE</span>
-                </div>
-            </div>
-        </section>
-
-        <!-- PLAN DE PRODUCCIÓN -->
-        <section class="section">
-            <h2><span class="icon">📋</span> Plan de Producción</h2>
-            <p>Cronograma, equipo y logística</p>
-
-            <div class="card-grid">
-                <div class="card pending">
-                    <h3>Fases de Producción</h3>
-                    <p>Pre-producción, rodaje y post-producción.</p>
-                    <span class="tag pending">PENDIENTE</span>
-                </div>
-                <div class="card pending">
-                    <h3>Equipo Necesario</h3>
-                    <p>Creativo, técnico y de producción.</p>
-                    <span class="tag pending">PENDIENTE</span>
-                </div>
-                <div class="card pending">
-                    <h3>Checklists</h3>
-                    <p>Listas de verificación para cada fase.</p>
-                    <span class="tag pending">PENDIENTE</span>
-                </div>
-            </div>
-        </section>
-
-        <!-- REQUISITOS TÉCNICOS -->
-        <section class="section">
-            <h2><span class="icon">🔧</span> Requisitos Técnicos</h2>
-            <p>Equipo de cámara, iluminación y audio</p>
-
-            <div class="card-grid">
-                <div class="card pending">
-                    <h3>Equipo de Cámara</h3>
-                    <p>Cámara, lentes y accesorios.</p>
-                    <span class="tag pending">PENDIENTE</span>
-                </div>
-                <div class="card pending">
-                    <h3>Iluminación</h3>
-                    <p>Luces y modificadores.</p>
-                    <span class="tag pending">PENDIENTE</span>
-                </div>
-                <div class="card pending">
-                    <h3>Post-Producción</h3>
-                    <p>Software y especificaciones de render.</p>
-                    <span class="tag pending">PENDIENTE</span>
-                </div>
-            </div>
-        </section>
-
-        <!-- PRESUPUESTO -->
-        <section class="section">
-            <h2><span class="icon">💰</span> Presupuesto</h2>
-            <p>Estimación de costos</p>
-
-            <div class="card-grid">
-                <div class="card pending">
-                    <h3>Opción Baja</h3>
-                    <p>Equipo básico, 1-2 locaciones, 1 día.</p>
-                    <span class="tag pending">PENDIENTE</span>
-                </div>
-                <div class="card pending">
-                    <h3>Opción Media</h3>
-                    <p>Equipo profesional, 2-3 días.</p>
-                    <span class="tag pending">PENDIENTE</span>
-                </div>
-                <div class="card pending">
-                    <h3>Opción Alta</h3>
-                    <p>Producción completa, VFX.</p>
-                    <span class="tag pending">PENDIENTE</span>
-                </div>
-            </div>
-        </section>
-
-        <!-- PRÓXIMOS PASOS -->
+        <!-- ==================== PRÓXIMOS PASOS ==================== -->
         <section class="section" style="border-color: #ffc107;">
             <h2><span class="icon">🚀</span> Próximos Pasos</h2>
-            <p>Lo que sigue por hacer</p>
-
             <div class="card-grid">
-                <div class="card" style="background: rgba(255, 193, 7, 0.1); border-color: rgba(255, 193, 7, 0.3);">
+                <div class="card" style="background: rgba(255,193,7,0.1); border-color: rgba(255,193,7,0.3);">
                     <h3 style="color: #ffc107;">1. Storyboard</h3>
-                    <p>Visualizar los planos con tipo de plano y movimiento de cámara.</p>
-                    <span class="tag pending">SIGUIENTE</span>
+                    <p>Dibujar los planos de cada escena con referencias visuales.</p>
                 </div>
-                <div class="card" style="background: rgba(255, 193, 7, 0.1); border-color: rgba(255, 193, 7, 0.3);">
+                <div class="card" style="background: rgba(255,193,7,0.1); border-color: rgba(255,193,7,0.3);">
                     <h3 style="color: #ffc107;">2. Style Guide</h3>
-                    <p>Definir colores, iluminación, vestuario y movimiento de cámara.</p>
-                    <span class="tag pending">PRÓXIMO</span>
+                    <p>Colores, iluminación, vestuario, movimiento de cámara.</p>
                 </div>
-                <div class="card" style="background: rgba(255, 193, 7, 0.1); border-color: rgba(255, 193, 7, 0.3);">
+                <div class="card" style="background: rgba(255,193,7,0.1); border-color: rgba(255,193,7,0.3);">
                     <h3 style="color: #ffc107;">3. Plan de Producción</h3>
-                    <p>Cronograma, equipo y logística de rodaje.</p>
-                    <span class="tag pending">PRÓXIMO</span>
+                    <p>Cronograma, equipo, locaciones, presupuesto.</p>
                 </div>
             </div>
         </section>
@@ -636,7 +410,7 @@
     </div>
 
     <footer>
-        <p>🎬 Videoclip Project — "¿Quién Es Ella?" — Documentación de Producción</p>
+        <p>🎬 Videoclip Project — "¿Quién Es Ella?" — Fredy González</p>
         <p style="margin-top: 0.5rem;">Última actualización: Septiembre 2026</p>
     </footer>
 </body>

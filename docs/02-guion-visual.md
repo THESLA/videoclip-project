@@ -1,266 +1,155 @@
-# 📜 Guión Visual — "¿Quién Es Ella?" — Fredy González
+# 📜 Guión Visual por Tiempo — "¿Quién Es Ella?" — Fredy González
 
-## Información General
+## Distribución por Tiempo de Canción
 
-| Campo | Valor |
-|-------|-------|
-| **Canción** | ¿Quién Es Ella? |
-| **Artista** | Fredy González |
-| **Duración aprox.** | 3:00 - 3:30 |
-| **Estilo** | Llanero coqueto, romántico, divertido |
-| **Tono** | Cálido, coqueto, con humor |
-
----
-
-## Estructura General
-
-| Escena | Momento | Descripción |
-|--------|---------|-------------|
-| 1 | Intro | André llega a la zapatería |
-| 2 | Verso 1 | Las mujeres lo provocan |
-| 3 | Coro 1 | Él canta rodeado de zapatos |
-| 4 | Verso 2 | Más provocación, él responde coqueto |
-| 5 | Coro 2 | André canta con el grupo |
-| 6 | Verso 3 | Las mujeres se intensifican |
-| 7 | Coro Final | Llega la esposa, escena lenta |
-| 8 | Outro | Ellas se van, ellos se quedan solos |
+| Tiempo | Parte Musical | Qué sucede | Planos de Cámara |
+|--------|---------------|------------|------------------|
+| 0:00 - 0:05 | Intro instrumental | La zapatería vacía, se encienden las luces | Plano general cenital |
+| 0:05 - 0:12 | Intro | André abre la puerta y entra | Plano general → Plano medio |
+| 0:12 - 0:18 | Intro | Camina por la zapatería, mira los zapatos | Travelling siguiéndolo |
+| 0:18 - 0:25 | Intro | Se sienta en el sillón del centro | Plano medio → Plano detalle (sentarse) |
 
 ---
 
-## ESCENA 1: La Llegada
+## VERSO 1 (0:25 - 0:45)
 
-**Ubicación:** Zapatería elegante (por ubicar)
-**Momento:** Día, tarde
-**Duración:** ~15 segundos
-**Música:** Intro instrumental
-
-### Visual
-Plano general de la zapatería. Elegante, moderna, vitrinas con zapatos, iluminación cálida. En el centro, un sillón grande y lujoso.
-
-### Acción
-André llega **solo** por la puerta principal. Camina tranquilo, confiado. Mira a su alrededor. Se sienta en el sillón del centro. Cruzando las piernas, relajado. Espera.
-
-### Notas de Cámara
-- Plano general: la zapatería completa
-- Plano medio: André entrando
-- Plano detalle: sus zapatos al sentarse
+| Tiempo | Letra | Acción en Pantalla | Plano de Cámara |
+|--------|-------|-------------------|-----------------|
+| 0:25 - 0:30 | "¿Y cómo es ella?, me preguntan mis amigos" | André sentado, sonriendo, recuerda | Primer plano (cara) |
+| 0:30 - 0:35 | "únicamente les digo: solo ternura y pasión" |-flashback rápido: ella sonriendo | Plano medio ella |
+| 0:35 - 0:40 | "¿Que si es bonita?, me preguntan y les digo" | La Puerta se abre, entra la Mujer 1 | Plano general puerta |
+| 0:40 - 0:45 | "mi morena es lo más lindo de toda la creación" | Mujer 1 se sienta a su lado, lo mira | Contraplano André ↔ Mujer 1 |
 
 ---
 
-## ESCENA 2: La Provocación
+## CORO 1 (0:45 - 1:05)
 
-**Ubicación:** Zapatería
-**Momento:** Tarde
-**Duración:** ~40 segundos
-**Música:** Verso 1 ("¿Y cómo es ella?, me preguntan mis amigos...")
-
-### Visual
-André sentado en el sillón. Empiezan a llegar las mujeres. Son **6 a 9 mujeres** diferentes, una por una o en grupos pequeños.
-
-### Acción
-
-**Mujer 1:** Se sienta a su lado derecho. Empieza a quitarse los zapatos pero se "turban" — se le traban los tacones, se ríe, se recuesta contra él para que la ayude.
-
-**Mujer 2:** Se sienta a su izquierda. Le toca el cabello, le hace preguntas, intenta conversación. "¿De dónde eres?", "¿Cómo te llamas?".
-
-**Mujer 3:** Llega caminando frente a él, despacio, provocadora. Pide zapatos al vendedor pero mira a André.
-
-**Mujer 4-6:** Otras que llegan, se sientan cerca, lo observan, le sonríen.
-
-**André:** Es un **llanero coqueto**. No las rechaza, pero tampoco las busca. Le da risa. Sonríe. Coquetea sin comprometerse. Mira a una, luego a otra. Juega.
-
-### Notas de Cámara
-- Planos medios de cada mujer llegando
-- Primeros planos de las mujeres quitándose zapatos
-- Plano de André reaccionando (sonrisa coqueta)
-- Cortes rápidos entre mujeres
+| Tiempo | Letra | Acción en Pantalla | Plano de Cámara |
+|--------|-------|-------------------|-----------------|
+| 0:45 - 0:50 | "¿Que cómo es ella? Que ella es la más bella" | André de pie, canta a cámara, zapatos de fondo | Plano medio André cantando |
+| 0:50 - 0:55 | "que es como una estrella, que ella es la doncella" | Flashback: ella caminando bajo las estrellas | Plano general nocturno |
+| 0:55 - 1:00 | "que marcó sus huellas en la suave arena de mi corazón" | Sus pies caminando en arena (huellas) | Plano detalle pies |
+| 1:00 - 1:05 | "que no conoce de envidia, mucho menos de traición" | André sonríe, vuelve a la zapatería | Primer plano cara |
 
 ---
 
-## ESCENA 3: André Canta (Coro 1)
+## CORO 2 (1:05 - 1:20)
 
-**Ubicación:** Zapatería
-**Momento:** Tarde
-**Duración:** ~20 segundos
-**Música:** Coro 1 ("¿Que cómo es ella? Que ella es la más bella...")
-
-### Visual
-André de pie, rodeado de zapatos. Vitrinas, cajas, estantes. El grupo musical aparece brevemente (si aplica).
-
-### Acción
-André canta el coro directamente a cámara. Generoso, con energía. Los zapatos como telón de fondo. Puede agarrar un zapato, mostrarlo, jugar con la idea de "ella es la más bella".
-
-### Notas de Cámara
-- Plano medio: André cantando
-- Planos de vitrinas y zapatos
-- Movimiento de cámara fluido (gimbal)
+| Tiempo | Letra | Acción en Pantalla | Plano de Cámara |
+|--------|-------|-------------------|-----------------|
+| 1:05 - 1:10 | "¿Que si es llanera? Que es muy sabanera" | Mujer 2 llega, se sienta, provoca | Plano medio llegada |
+| 1:10 - 1:15 | "que es como palmera, que su cabellera" | Ella se quita el pelo, pelo al viento | Plano detalle cabello |
+| 1:15 - 1:18 | "es la que desvela mi sentimiento lleno de ilusión" | André la mira, sonríe, coquetea | Contraplano |
+| 1:18 - 1:20 | "que si una noche me deja, me muero al salir el sol" | André mira la puerta, espera | Plano medio + mirada |
 
 ---
 
-## ESCENA 4: La Provocación se Intensifica
+## VERSO 2 (1:20 - 1:40)
 
-**Ubicación:** Zapatería
-**Momento:** Tarde
-**Duración:** ~35 segundos
-**Música:** Verso 2 ("¿Y quién es ella?, me preguntan por la calle...")
-
-### Visual
-Las mujeres ahora están más cerca. Más atrevidas.
-
-### Acción
-**Mujer 7:** Se sienta en sus piernas o muy cerca. Le susurra al oído.
-
-**Mujer 8:** Le agarra la mano, le pone un zapato en el regazo.
-
-**Mujer 9:** Se para enfrente de él, se da vuelta, muestra los zapatos.
-
-**André:** Sigue siendo coqueto pero hay un momento donde se le nota que piensa en alguien más. Una micro-expresión de "ella no es". Sonríe pero hay algo distante.
-
-### Notas de Cámara
-- Planos más cerrados, más íntimos
-- Contraplanos André ↔ Mujeres
-- Enfoque selectivo (depth of field)
+| Tiempo | Letra | Acción en Pantalla | Plano de Cámara |
+|--------|-------|-------------------|-----------------|
+| 1:20 - 1:25 | "¿Y quién es ella?, me preguntan por la calle" | Mujer 3 entra caminando por la calle (exterior) | Plano general exterior |
+| 1:25 - 1:30 | "mi morena es el detalle más lindo que Dios me dio" | Entra a la zapatería, lo busca con la mirada | Tracking detrás de ella |
+| 1:30 - 1:35 | "Es atractiva, seductora y sensitiva" | Se sienta cerca de André, le toca el brazo | Plano medio + detalle mano |
+| 1:35 - 1:40 | "me enseñó que toda falta viene huyéndole a un perdón" | André se turba un poco, pero resiste | Primer plano cara André |
 
 ---
 
-## ESCENA 5: André Canta (Coro 2)
+## VERSO 3 (1:40 - 2:10)
 
-**Ubicación:** Zapatería
-**Momento:** Tarde
-**Duración:** ~20 segundos
-**Música:** Coro 2 ("¿Que si es llanera? Que es muy sabanera...")
-
-### Visual
-André cantando con más pasión. Rodeado de zapatos y cajas.
-
-### Acción
-El grupo musical acompaña. André canta con energía, mueve las manos, se enfunda en la canción. Los zapatos se convierten en parte de la coreografía visual.
-
-### Notas de Cámara
-- Planos dinámicos
-- Movimiento de cámara en semi-círculo
-- Cortes al ritmo de la música
+| Tiempo | Letra | Acción en Pantalla | Plano de Cámara |
+|--------|-------|-------------------|-----------------|
+| 1:40 - 1:45 | "Tiene un cuerpazo de aquellos que incitan a darle un abrazo" | Mujer 4-5-6 llegan, rodean a André | Plano general: 3 mujeres |
+| 1:45 - 1:50 | "como un espejito brillan sus ojazos" | Plano de ojos brillando (espejo) | Plano detalle ojos |
+| 1:50 - 1:55 | "en los que de tarde, cuando hay arrebol" | Flashback: cielo de atardecer rojizo | Plano general cielo |
+| 1:55 - 2:00 | "se ve reflejado el llano y hasta llanera es su voz" | Reflejo en un espejo/lago | Plano reflejo |
+| 2:00 - 2:05 | "Consentidora, es la más bonita, fiel y encantadora" | Todas las mujeres alrededor, máxima tensión | Plano cenital: André rodeado |
+| 2:05 - 2:08 | "yo la quiero mucho, dice que me adora" | André se levanta, busca la puerta | Plano medio: de pie |
+| 2:08 - 2:10 | "mi morena es la que carga loquito a mi corazón" | La puerta se abre, silueta dorada | Plano general puerta |
 
 ---
 
-## ESCENA 6: Las Mujeres se Acercan Más
+## CORO 1 REPETICIÓN (2:10 - 2:28) ⭐
 
-**Ubicación:** Zapatería
-**Momento:** Tarde
-**Duración:** ~30 segundos
-**Música:** Verso 3 ("Tiene un cuerpazo de aquellos...")
-
-### Visual
-Máxima provocación. Las mujeres están alrededor de André, casi tocándolo.
-
-### Acción
-Todas a la vez: una le toca el hombro, otra la pierna, otra le habla. André está en el centro de atención. Pero él mira la puerta. Espera a alguien.
-
-**Momento clave:** André se levanta, se abre paso entre las mujeres. Busca con la mirada.
-
-### Notas de Cámara
-- Plano cenital: André rodeado de mujeres
-- Plano de André mirando la puerta
-- Tensión visual creciente
+| Tiempo | Letra | Acción en Pantalla | Plano de Cámara |
+|--------|-------|-------------------|-----------------|
+| 2:10 - 2:13 | "¿Que cómo es ella? Que ella es la más bella" | **LA ESPOSA ENTRA** — Luz dorada, ralentizado | **120fps** Plano general |
+| 2:13 - 2:17 | "que es como una estrella, que ella es la doncella" | Camina hacia André, todo ralentizado | **120fps** Tracking fluido |
+| 2:17 - 2:20 | "que marcó sus huellas en la suave arena de mi corazón" | Se sienta a su lado, se miran | **120fps** Plano medio |
+| 2:20 - 2:23 | "que no conoce de envidia, mucho menos de traición" | Él le toma la mano | **120fps** Plano detalle manos |
+| 2:23 - 2:25 | — | André se arrodilla | **120fps** Plano medio |
+| 2:25 - 2:28 | — | **Le pone el zapato en el pie** | **120fps** Plano detalle zapato |
 
 ---
 
-## ESCENA 7: Llega la Esposa ⭐
+## CORO 2 REPETICIÓN (2:28 - 2:45)
 
-**Ubicación:** Zapatería
-**Momento:** Atardecer (luz dorada)
-**Duración:** ~30 segundos
-**Música:** Coro Final ("¿Que cómo es ella? Que ella es la más bella...")
-
-### Visual
-**ESTA ESCENA SE GRABA A 120fps O 60fps PARA RALENTIZAR.**
-
-La puerta de la zapatería se abre. Luz dorada de atardecer entra. La esposa aparece en silueta.
-
-### Acción
-
-1. **Ella entra** — Camina hacia André. Segura, elegante, natural.
-
-2. **Él se sienta** — Ella se sienta a su lado en el sillón. Se miran. Sonríen.
-
-3. **Conversan** — Se ríen. Él le dice algo al oído. Coquetea genuinamente.
-
-4. **El zapato** — André toma un zapato de una vitrina. Se arrodilla. **Le pone el zapato en el pie a ella.**
-
-5. **El beso** — Se besan. Momento romántico total.
-
-6. **Las mujeres reaccionan** — Las 6-9 mujeres miran la escena. Se miran entre ellas. Expresiones de "ay no", "está casado", "ya me voy". Una por una se van.
-
-### Notas de Cámara
-- **RALENTIZADO:** 120fps o 60fps
-- Plano de ella entrando (silueta con luz dorada)
-- Plano-detail: el zapato poniéndose en su pie
-- Primer planos de ambos mirándose
-- Plano de las mujeres reaccionando y yéndose
-- Transición suave, fluida
+| Tiempo | Letra | Acción en Pantalla | Plano de Cámara |
+|--------|-------|-------------------|-----------------|
+| 2:28 - 2:32 | "¿Que si es llanera? Que es muy sabanera" | Se besan — ralentizado | **120fps** Primer plano beso |
+| 2:32 - 2:36 | "que es como palmera, que su cabellera" | Las mujeres miran, reaccionan | Plano medio: grupo mujeres |
+| 2:36 - 2:40 | "es la que desvela mi sentimiento lleno de ilusión" | Expresiones: "ay no", "está casado" | Primer planos caras |
+| 2:40 - 2:45 | "que si una noche me deja, me muero al salir el sol" | Una por una se van | Plano general: salen |
 
 ---
 
-## ESCENA 8: Outro — Solos
+## OUTRO (2:45 - 2:55)
 
-**Ubicación:** Zapatería
-**Momento:** Atardecer/Noche
-**Duración:** ~15 segundos
-**Música:** Outro ("Y bueno, el resto es historia...")
-
-### Visual
-La zapatería vacía. Solo André y ella. Zapatos por todos lados. Luz cálida.
-
-### Acción
-Se sientan juntos en el sillón. Él le pone el brazo alrededor. Ella apoya la cabeza en su hombro. Se miran. Sonríen. Fundido a negro.
-
-### Notas de Cámara
-- Plano general: los dos solos en la zapatería
-- Fundido a negro final
+| Tiempo | Letra | Acción en Pantalla | Plano de Cámara |
+|--------|-------|-------------------|-----------------|
+| 2:45 - 2:48 | "¿Que cómo es ella? Que ella es la más bella" | Zapatería vacía, solo ellos dos | Plano general |
+| 2:48 - 2:50 | "que es como una estrella, que ella es la doncella" | Se sientan juntos, brazo alrededor | Plano medio |
+| 2:50 - 2:53 | "que marcó sus huellas en la suave arena de mi corazón" | Ella apoya cabeza en su hombro | Plano medio cerrado |
+| 2:53 - 2:55 | — | Se miran, sonríen. **FUNDIDO A NEGRO** | Fundido final |
 
 ---
 
-## ESCENAS ADICIONALES (Opcionales)
+## ESCENAS ADICIONALES (Opcionales — por cliente)
 
-### A. Entrega de Zapatos en Domicilio
-**Nota del cliente:** El cliente solicita escenas donde André va a los lugares de trabajo o domicilios de las mujeres y les entrega una caja de zapatos.
+### Entrega de Zapatos
 
-**Concepto:** André, después de la zapatería, visita a cada mujer y les regala zapatos como gesto de generosidad. No es romántico, es amable.
+| Escena | Tiempo aprox. | Lugar | Acción | Plano |
+|--------|---------------|-------|--------|-------|
+| A1 | Fuera de canción | Domicilio Mujer 1 | Toca puerta, da caja | Plano medio |
+| A2 | Fuera de canción | Oficina Mujer 2 | Llega, entrega caja | Plano general |
+| A3 | Fuera de canción | Salón Mujer 3 | Ella en silla, da caja | Plano medio |
 
-| Escena | Lugar | Acción |
-|--------|-------|--------|
-| A1 | Domicilio mujer 1 | Toca la puerta, le da la caja, ella sonríe |
-| A2 | Oficina mujer 2 | Llega a su trabajo, le entrega la caja |
-| A3 | Salón de belleza mujer 3 | Ella está en una silla, él le da la caja |
+### André con Grupo
 
-### B. André Cantando con el Grupo
-Escenas de Fredy González cantando con su grupo musical dentro de la zapatería, rodeados de zapatos y cajas. Momentos de energía y musicalidad.
-
----
-
-## Resumen de Tomas
-
-| # | Escena | Tipo Plano | Movimiento | Notas |
-|---|--------|------------|------------|-------|
-| 1 | Llegada | General → Medio | Estático → Tracking | Entrada de André |
-| 2 | Provocación | Medios + Primeros planos | Cortes rápidos | 6-9 mujeres |
-| 3 | Coro 1 | Medio | Gimbal | André cantando |
-| 4 | Provocación 2 | Cerrados | Contraplanos | Intensificación |
-| 5 | Coro 2 | Medio | Semi-círculo | Grupo musical |
-| 6 | Máxima provocación | Cenital + Cerrados | Estático | Tensión |
-| 7 | Esposa llega | **RALENTIZADO** | Fluida | **120fps/60fps** |
-| 8 | Outro | General | Estático | Fundido a negro |
+| Escena | Tiempo aprox. | Lugar | Acción | Plano |
+|--------|---------------|-------|--------|-------|
+| B1 | Entre versos | Zapatería | Canta con grupo, zapatos | Plano general |
+| B2 | Coros | Zapatería | Coreografía con zapatos | Movimiento circular |
 
 ---
 
-## Equipo Necesario para Grabación
+## Resumen de Tomas por Escena
 
-- **Cámara:** Capaz de grabar a 120fps (para escena 7)
-- **Lentes:** Gran angular (zapatería), Normal (planos medios), Macro (detalles de zapatos)
-- **Iluminación:** Luces cálidas, luz de atardecer para escena 7
-- **Gimbal:** Para movimientos fluidos en zapatería
-- **Zapatos:** Múltiples pares de zapatos para vestuario y utilería
+| # | Escena | Tiempo | Duración | Tipo Plano Principal | Movimiento |
+|---|--------|--------|----------|---------------------|------------|
+| 1 | Llegada | 0:00-0:25 | 25s | General + Medio | Travelling |
+| 2 | Verso 1 | 0:25-0:45 | 20s | Primer plano + Contraplano | Estático |
+| 3 | Coro 1 | 0:45-1:05 | 20s | Medio + Detalle | Gimbal |
+| 4 | Coro 2 | 1:05-1:20 | 15s | Medio + Contraplano | Estático |
+| 5 | Verso 2 | 1:20-1:40 | 20s | Tracking + Medio | Tracking |
+| 6 | Verso 3 | 1:40-2:10 | 30s | Cenital + Detalle | Mixto |
+| 7 | Coro 1 (rep) | 2:10-2:28 | 18s | **RALENTIZADO 120fps** | Fluida |
+| 8 | Coro 2 (rep) | 2:28-2:45 | 17s | Primer plano + General | Estático |
+| 9 | Outro | 2:45-2:55 | 10s | General + Medio | Estático |
+| | **TOTAL** | | **~2:55** | | |
 
 ---
 
-*Guión visual en desarrollo — Actualizar con cada decisión de producción*
+## Equipo Necesario por Escena
+
+| Escena | Equipo Especial |
+|--------|-----------------|
+| 1 | Gimbal, trípode |
+| 2 | Lente 85mm (primeros planos) |
+| 3 | Gimbal, lente 50mm |
+| 4 | Lente 85mm |
+| 5 | Gimbal, lente 35mm |
+| 6 | Lente gran angular + cenital |
+| 7 | **Cámara 120fps**, lente 50mm, luz dorada |
+| 8 | Lente 85mm |
+| 9 | Trípode, luz cálida |
